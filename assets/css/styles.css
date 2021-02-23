@@ -914,6 +914,7 @@ footer {
   position: relative;
   overflow: hidden;
   background-position: center;
+  z-index: 3;
 }
 .calltoaction .container > * {
   margin: 0.5rem 0;

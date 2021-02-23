@@ -313,6 +313,32 @@ if (fileName == "services.html") {
     seo.classList.add("servicesServiceHide");
     email.classList.add("servicesServiceShow");
   });
+
+
+  // filter onscroll
+
+  const services__header = document.querySelector('.services__header');
+
+  window.addEventListener('scroll', () => {
+
+    console.clear();
+
+    const scrolled = window.scrollY;
+    
+    console.log(scrolled)
+
+    if(scrolled > 800){
+      console.log('hey')
+      services__header.classList.add('stickFilterToLeft')
+    } else {
+      console.log('kaj korchena')
+      services__header.classList.remove('stickFilterToLeft')
+    }
+
+  })
+
+
+
 } else {
   //   console.log("eta service ja kaj korchen");
 }
@@ -518,18 +544,18 @@ if (fileName == "portfolio.html") {
   var mixer = mixitup(containerEl);
 }
 
-// // cartslide js
-// const bag = document.querySelector(".bag");
-// const cartslide = document.querySelector(".cartslide");
-// const closecartslide = document.querySelector(".closecartslide");
+// cartslide js
+const bag = document.querySelector(".bag");
+const cartslide = document.querySelector(".cartslide");
+const closecartslide = document.querySelector(".closecartslide");
 
-// bag.addEventListener("click", () => {
-//   cartslide.classList.add("showCartSlide");
-// });
+bag.addEventListener("click", () => {
+  cartslide.classList.add("showCartSlide");
+});
 
-// closecartslide.addEventListener("click", () => {
-//   cartslide.classList.remove("showCartSlide");
-// });
+closecartslide.addEventListener("click", () => {
+  cartslide.classList.remove("showCartSlide");
+});
 
 if (fileName == "development.html") {
   // development filter

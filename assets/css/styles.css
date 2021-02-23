@@ -710,6 +710,8 @@ footer {
   background: #10182f;
   padding: 5rem 0;
   color: white;
+  position: relative;
+  z-index: 3;
 }
 .container.footer__top {
   display: grid;
@@ -903,56 +905,121 @@ footer {
 /* call to action starts here */
 
 .calltoaction {
-  background-image: linear-gradient(to right, dodgerblue 0%, #38f9d7 100%);
+  background: url("../images/homepage/calltoaction/2ndsection.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0;
   text-align: center;
-  padding: 3rem 0;
-}
-
-.calltoaction__body {
   color: white;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+}
+.calltoaction .container > * {
+  margin: 0.5rem 0;
+}
+.calltoaction h1 {
+  font-size: 2rem;
+}
+.calltoaction button {
+  border: none;
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  background: white !important;
+  color: #3093ce;
 }
 
-.calltoaction__body .description {
-  width: 50%;
-  margin: 1rem auto;
-  margin-bottom: 2rem;
+.calltoaction p {
+  font-weight: 300;
 }
 
-.calltoaction p:first-child {
-  color: white;
-}
-.calltoaction__body div {
+.calltoaction .first {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -20%;
+  left: 10%;
+  transform: translate(-10%, -20%);
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
   align-items: center;
 }
-.calltoaction__body div button {
-  background: white;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  padding: 1rem 1.5rem;
-  border-radius: 30px;
-  margin-right: 2rem;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-}
-.calltoaction__body div button:hover {
-  transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -o-transform: scale(0.95);
+
+.calltoaction .first span {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
-.calltoaction__body div .call {
-  font-size: 1.6rem;
-  margin-left: 2rem;
-  font-weight: 500;
+.calltoaction .second {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform: translate(-5%, -50%);
+  -moz-transform: translate(-5%, -50%);
+  -ms-transform: translate(-5%, -50%);
+  -o-transform: translate(-5%, -50%);
+}
+
+.calltoaction .third {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  bottom: -20%;
+  right: 10%;
+  transform: translate(-10%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calltoaction .third span {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  top: -50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(50%, 50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.calltoaction .square {
+  width: 3%;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-20%, -70%);
 }
 
 /* call to action ends here */
@@ -1187,18 +1254,55 @@ footer {
 .services__bodyServiceBodyBottomBenifit {
   background: white;
   box-shadow: 0 0 10px 0 #00000012;
-  padding: 3rem 1rem;
-  border-radius: 10px;
+  padding: 3rem 1rem !important;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
 }
 
 .services__bodyServiceBodyBottomBenifit img {
-  width: 15%;
+  width: 15% !important;
 }
 
 .services__bodyServiceBodyBottomBenifit div img {
-  width: 8%;
-  margin-right: 0.5rem;
+  width: 8% !important;
+  margin-right: 0.5rem !important;
 }
+
+
+/* ------------------------------------------------- */
+
+
+
+
+.servicesPage .stickFilterToLeft  {
+	grid-template-columns: 1fr;
+	width: 3%;
+	position: fixed;
+	top: 13%;
+	left: 5%;
+}
+
+.servicesPage .stickFilterToLeft div {
+  padding: .5rem;
+}
+
+.servicesPage .stickFilterToLeft div img {
+	width: 60% !important;
+	margin: auto;
+}
+
+.servicesPage .stickFilterToLeft div p {
+	display: none;
+}
+
+
+
+
+
+/* ------------------------------------------------- */
 
 /* service filter section ends here */
 
@@ -1670,10 +1774,12 @@ footer {
   width: 40%;
   margin: auto;
   margin-bottom: 2rem;
+  color: gray;
 }
 .buyservice__body {
   width: 90%;
-  margin: 4rem auto;
+  margin: 0rem auto;
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 3rem;
@@ -3024,6 +3130,15 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .thankyou__bodyHeader h1 {
     font-size: 1.3rem;
+  }
+  .calltoaction h1 {
+    font-size: 1.5rem;
+  }
+  .calltoaction .first {
+    top: -30%;
+  }
+  .featured__body {
+    grid-template-columns: 1fr;
   }
 }
 

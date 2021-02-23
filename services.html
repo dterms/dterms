@@ -24,7 +24,8 @@
     <!-- header section starts here -->
 
 
-    <header>
+
+    <header id="header">
         <div class="container d_flex justify_between a_center">
             <div class="header__left">
                 <a href="index.html">
@@ -41,15 +42,24 @@
                         <span>HOT </span>
                     </li>
                     <li class="nav_item">
-                        <a href="services.html" class="nav_link">Development</a>
+                        <a href="development.html" class="nav_link">Development</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="graphic.html" class="nav_link">Graphic Design</a>
                     </li>
                     <li class="nav_item">
                         <a href="portfolio.html" class="nav_link">Portfolio</a>
                     </li>
                     <li class="nav_item">
                         <a href="tel:+1-847-555-5555" class="nav_link quote">
-                            1-847-555-5555
+                            <span>+880123456789</span>
                             <img src="assets/images/allicons/phone.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link bag">
+                            <img src="assets/images/allicons/shopping-bag.svg" alt="">
+                            <p>3</p>
                         </a>
                     </li>
                 </ul>
@@ -60,24 +70,35 @@
 
 
 
-    <section class="mobilemenu">
+    <section id="mmenu" class="mobilemenu">
         <div class="container">
             <div class="mobilemenu__header">
                 <img src="assets/images/homepage/header/logo.png" alt="site logo">
-                <img src="assets/images/allicons/align-left.svg"
-                class="hamburger" id="amarmenu" alt="hamburger">
+                <div>
+                    <a href="checkout.html">
+                        <img src="./assets/images/allicons/shopping-bag.svg" alt="">
+                    </a>
+                    <img src="assets/images/allicons/align-left.svg"
+                    class="hamburger cursor_pointer ml_3  nn            " id="amarmenu" alt="hamburger">
+                </div>
             </div>
             <div class="mobilemenu__body">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
                     </li>
+                    <li>
+                        <a href="services.html">Social Media Marketting</a>
+                    </li>
                     <li class="mobilemenu__bodyCorporate position_relative">
                         <a href="video.html">Video Creation</a>
                         <span>HOT </span>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
+                        <a href="development.html">Development</a>
+                    </li>
+                    <li>
+                        <a href="graphic.html">Graphic Design</a>
                     </li>
                     <li>
                         <a href="portfolio.html">Portfolio</a>
@@ -92,7 +113,6 @@
             </div>
         </div>
     </section>
-
     <!-- header section ends here -->
 
 
@@ -1749,23 +1769,90 @@
 
     <!-- call to action buttons starts here -->
 
-    <div data-aos="zoom-in-up" class="calltoaction">
+    <section class="calltoaction">
         <div class="container">
-            <div class="calltoaction__body">
-                <h1>Satifsfied with the portfolio?</h1>
-                <p class="description">We deliver your excat professional works with unlimited revisons. So what are you
-                    waiting for? Get technological monks in your bag pack!</p>
+            <h1>Get Your Free Images Done, NOW.</h1>
+            <button class="btn_round">Free Trial</button>
+            <p><b>Note: </b>Trial images edited for free - No credit card required</p>
+            <span class="first">
+                <span></span>
+            </span>
+            <span class="second"></span>
+            <span class="third">
+                <span></span>
+            </span>
+            <img src="./assets/images/homepage/calltoaction/elements.svg" alt="squre" class="square">
+        </div>
+    </section>
+    <!-- call to action buttons ends here -->
 
-                <div>
-                    <button>ORDER NOW</button>
-                    <p>Or</p>
-                    <p class="call">Call - +990123456789</p>
+    
+    
+    <!-- cart slide sesction starts here -->
+
+    
+    <div class="cartslide">
+        <div class="cartslide__left"></div>
+        <div class="cartslide__right">
+            <div class="cartslide__rightHeader d_flex justify_between a_center">
+                <h3>SHOPPING CART</h3>
+                <img src="./assets/images/allicons/x-black.svg" class="closecartslide cursor_pointer mr_1" alt="close icon">
+            </div>
+            <div class="cartslide__rightBody">
+                <div class="d_flex justify_between">
+                    <div class="d_flex">
+                        <img src="./assets/images/service/serviceHeader/facebook_108044.svg" alt="service">
+                        <div class="ml_1">
+                            <p>Facebook Marketting</p>
+                            <p>$360.00</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p class="mr_2 cancel">x</p>
+                    </a>
                 </div>
+                <div class="d_flex justify_between">
+                    <div class="d_flex">
+                        <img src="./assets/images/service/serviceHeader/facebook_108044.svg" alt="service">
+                        <div class="ml_1">
+                            <p>Facebook Marketting</p>
+                            <p>$360.00</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p class="mr_2 cancel">x</p>
+                    </a>
+                </div>
+                <div class="d_flex justify_between">
+                    <div class="d_flex">
+                        <img src="./assets/images/service/serviceHeader/facebook_108044.svg" alt="service">
+                        <div class="ml_1">
+                            <p>Facebook Marketting</p>
+                            <p>$360.00</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p class="mr_2 cancel">x</p>
+                    </a>
+                </div>
+            </div>
+            <div class="cartslide__rightBottom">
+                <div class="cartslide__rightBottomHeader d_flex justify_between a_center mb_2">
+                    <h2>Total</h2>
+                    <p class="mr_2">$360.00</p>
+                </div>
+                <a href="">
+                    <button class="btn d_block btn_large btn_round mb_2">View cart</button>
+                </a>
+                <a href="checkout.html">
+                    <button class="btn btn_primary d_block btn_large btn_round mb_2">Checkout</button>
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- call to action buttons ends here -->
+
+<!-- cart slide sesction ends here -->
 
     <!-- footer section starts here -->
 

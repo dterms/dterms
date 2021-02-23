@@ -3261,6 +3261,12 @@ input[type="number"]::-webkit-outer-spin-button {
   .services__bodyServiceBodyTop p {
     font-size: .85rem;
   }
+  .services__bodyServiceBodyBottom ul {
+    margin-left: 1rem;
+  }
+  .services__bodyServiceBodyBottom ul li {
+    font-size: .85rem;
+  }
 }
 
 /* ------------------------------------------------------------ */

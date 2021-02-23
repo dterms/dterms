@@ -1283,6 +1283,7 @@ footer {
 	position: fixed;
 	top: 13%;
 	left: 5%;
+  z-index: 2;
 }
 
 .servicesPage .stickFilterToLeft div {
@@ -2706,6 +2707,19 @@ input[type="number"]::-webkit-outer-spin-button {
   .development__bodyServiceIntro div {
     margin: 0;
   }
+  .servicesPage .stickFilterToLeft div {
+    padding: 0.2rem;
+  }
+  .servicesPage .stickFilterToLeft div img {
+    width: 100% !important;
+    margin: auto;
+  }
+  .servicesPage .services__bodyServiceBody {
+    width: 80%;
+  }
+  .services__bodyServiceBodyTop ul {
+    margin-left: 0rem;
+  }
 }
 
 /* for screen size 900px */
@@ -2823,7 +2837,15 @@ input[type="number"]::-webkit-outer-spin-button {
   .header__right ul li .bag img {
     width: 80%;
   }
-
+  .servicesPage .stickFilterToLeft div {
+    padding: 0.5rem;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .servicesPage .stickFilterToLeft div img {
+    width: 60% !important;
+  }
 }
 
 /* for screen size 762px */
@@ -2834,10 +2856,6 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 80%;
     margin: 1rem auto;
     margin-bottom: 2rem;
-  }
-
-  .servicesPage .services__header div img {
-    width: 30% !important;
   }
 
   .servicesPage .services__header div p {
@@ -2950,14 +2968,15 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 1rem;
 
   }
-
   .development__bodyServiceProcessHeader p {
     width: 100%;
   }
-
   .development__bodyServiceProcessGrid {
     margin: 0;
     margin-top: 5rem;
+  }
+  .servicesPage .stickFilterToLeft div img {
+    width: 60% !important;
   }
 }
 
@@ -3140,6 +3159,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .featured__body {
     grid-template-columns: 1fr;
   }
+  .servicesPage .stickFilterToLeft {
+    left: 8%;
+  }
 }
 
 /* for screen size in 475px in width */
@@ -3205,6 +3227,10 @@ input[type="number"]::-webkit-outer-spin-button {
   .checkout__bodyRight {
     padding: 3rem 1rem;
   }
+  .servicesPage .stickFilterToLeft div img {
+    width: 90% !important;
+  }
+
 }
 
 /* for screen size in 510 in width */
@@ -3217,6 +3243,23 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .development__bodyServiceProcessItem:nth-child(2), .development__bodyServiceProcessItem:nth-child(4) {
     position: unset;
+  }
+  .servicesPage .stickFilterToLeft {
+    left: 12%;
+  }
+  .servicesPage .stickFilterToLeft div {
+    padding: 0.5rem;
+    height: 40px;
+    width: 40px;
+  }
+  .servicesPage .stickFilterToLeft div img {
+    width: 100% !important;
+  }
+  .services__bodyServiceBodyTop ul li div {
+    font-size: .8rem;
+  }
+  .services__bodyServiceBodyTop p {
+    font-size: .85rem;
   }
 }
 
@@ -3236,7 +3279,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* for screen size in 670px in height */
 @media screen and (max-height: 670px) {
   .mobilemenu {
-    height: 12vh;
+    height: 10vh;
   }
 
   .showmobilemenu {

@@ -20,7 +20,7 @@ const hamburger = document
   });
 
 // animation
-AOS.init();
+AOS.init({disable: 'mobile'});
 
 var fileName = location.pathname.substring(
   location.pathname.lastIndexOf("/") + 1
@@ -318,6 +318,7 @@ if (fileName == "services.html") {
   // filter onscroll
 
   const services__header = document.querySelector('.services__header');
+  const servicesPage__body = document.querySelector('.servicesPage__body');
 
   window.addEventListener('scroll', () => {
 
@@ -330,9 +331,13 @@ if (fileName == "services.html") {
     if(scrolled > 800){
       console.log('hey')
       services__header.classList.add('stickFilterToLeft')
+      servicesPage__body.classList.add('serviceHeaderSpaceOnScroll');
+
     } else {
       console.log('kaj korchena')
       services__header.classList.remove('stickFilterToLeft')
+      servicesPage__body.style.background = "unset !important";
+      servicesPage__body.classList.remove('serviceHeaderSpaceOnScroll');
     }
 
   })

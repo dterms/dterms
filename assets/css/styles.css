@@ -2847,6 +2847,21 @@ input[type="number"]::-webkit-outer-spin-button {
   .servicesPage .stickFilterToLeft div img {
     width: 60% !important;
   }
+  .services__bodyServiceBodyTop p {
+    font-size: .85rem;
+  }
+  .services__bodyServiceBodyTop div {
+    font-size: .85rem;
+  }
+  .services__bodyServiceBodyTopHeading h3, .services__bodyServiceBodyBottomHeading h3 {
+    font-size: 1.4rem !important;
+  }
+  .services__bodyServiceBodyBottom ul li {
+    font-size: .8rem;
+  }
+  .services__bodyServiceBodyBottom ul {
+    margin-left: 2rem;
+  }
 }
 
 /* for screen size 762px */
@@ -2978,6 +2993,15 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .servicesPage .stickFilterToLeft div img {
     width: 60% !important;
+  }
+  .services__bodyServiceBodyTopHeading h3, .services__bodyServiceBodyBottomHeading h3 {
+    font-size: 1rem !important;
+  }
+  .services__bodyServiceBodyTopHeading, .services__bodyServiceBodyBottomHeading {
+    grid-template-columns: 10% 90%;
+  }
+  .services__bodyServiceBodyBottom ul {
+    width: 100%;
   }
 }
 
@@ -3236,6 +3260,19 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* for screen size in 510 in width */
 @media screen and (max-width: 510px) {
+  .services__bodyService p:last-child {
+    color: gray;
+    font-size: .85rem;
+  }
+  .services__bodyServiceBodyBottom ul li {
+    font-size: .8rem;
+  }
+  .services__bodyServiceBodyTop p {
+    font-size: .8rem;
+  }
+  .services__bodyServiceBodyTopHeading, .services__bodyServiceBodyBottomHeading {
+    grid-template-columns: 15% 85%;
+  }
   .development__bodyServiceProcessGrid {
     grid-template-columns: 1fr;
   }
@@ -3452,6 +3489,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .showmobilemenu {
     height: 120vh !important;
+  }
+  .servicesPage .services__header {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .servicesPage .stickFilterToLeft {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicesPage .services__header {
+    grid-row-gap: 1.5rem;
+  }
+  .services__bodyServiceBodyTop div {
+    font-size: .8rem;
   }
 }
 

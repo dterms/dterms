@@ -1272,40 +1272,6 @@ footer {
   margin-right: 0.5rem !important;
 }
 
-
-/* ------------------------------------------------- */
-
-
-
-
-.servicesPage .stickFilterToLeft  {
-	grid-template-columns: 1fr;
-	width: 3%;
-	position: fixed;
-	top: 13%;
-	left: 5%;
-  z-index: 2;
-}
-
-.servicesPage .stickFilterToLeft div {
-  padding: .5rem;
-}
-
-.servicesPage .stickFilterToLeft div img {
-	width: 60% !important;
-	margin: auto;
-}
-
-.servicesPage .stickFilterToLeft div p {
-	display: none;
-}
-
-.serviceHeaderSpaceOnScroll {
-  margin-top: 20rem;
-}
-
-/* ------------------------------------------------- */
-
 /* service filter section ends here */
 
 /* service page ends here */
@@ -1705,7 +1671,15 @@ footer {
   display: grid;
   grid-template-columns: 0.25fr 0.6fr 0.25fr;
   grid-gap: 2rem;
-  margin: 4rem 0px;
+  align-items: center;
+  margin-top: 2rem;
+}
+.videoPage__bodyAnimationBodyCenter {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .videoPage__bodyVideoBody ul {
   margin-top: 2rem;
@@ -2333,6 +2307,56 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* thankyou section ends here */
 
+
+
+
+
+
+/* ------------------------------------------------- */
+
+.stickFilterToLeft  {
+	grid-template-columns: 1fr;
+	width: 3%;
+	position: fixed;
+	top: 13%;
+	left: 5%;
+  z-index: 2;
+}
+
+.stickFilterToLeft div {
+  padding: .5rem;
+}
+
+.stickFilterToLeft div img {
+	width: 60% !important;
+	margin: auto;
+}
+
+.stickFilterToLeft div p {
+	display: none;
+}
+
+.serviceHeaderSpaceOnScroll {
+  margin-top: 20rem;
+}
+
+.videoHeaderSpaceOnScroll {
+  margin-top: 27rem;
+}
+
+/* ------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------- */
 
 /* responsiveness starts from here */
@@ -2396,6 +2420,16 @@ input[type="number"]::-webkit-outer-spin-button {
   .buyservice__body {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 0rem;
+  }
+  .videoPage__bodyVideoBody {
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+  }
+  .videoPage__bodyAnimationBodyCenter {
+    height: 82%;
+  }
+  .videoPage__bodyVideoHeader p {
+    width: 60%;
+    font-size: 1rem;
   }
 }
 
@@ -2508,6 +2542,10 @@ input[type="number"]::-webkit-outer-spin-button {
   .development__bodyServiceProcessItem div p:first-child {
     margin-bottom: 0rem;
   }
+  .videoPage__bodyVideoBody ul li p {
+    font-size: .8rem;
+  }
+
 }
 
 /* for screen size 1200px */
@@ -3005,6 +3043,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .services__bodyServiceBodyBottom ul {
     width: 100%;
+  }
+  .videoPage__bodyVideoHeader p {
+    font-size: .85rem;
   }
 }
 

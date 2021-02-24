@@ -48,6 +48,11 @@ if (fileName == "services.html") {
   const email = document.querySelector(".emailMarketing");
 
   facebook__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
     // filter background
 
     // remove
@@ -77,6 +82,11 @@ if (fileName == "services.html") {
   });
 
   twitter__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
     // filter background
 
     // remove
@@ -108,6 +118,11 @@ if (fileName == "services.html") {
   });
 
   instagram__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
     // filter background
 
     // remove
@@ -140,6 +155,11 @@ if (fileName == "services.html") {
   });
 
   linkedin__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
     // filter background
 
     // remove
@@ -173,6 +193,11 @@ if (fileName == "services.html") {
   });
 
   youtube__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
     // filter background
 
     // remove
@@ -207,6 +232,12 @@ if (fileName == "services.html") {
   });
 
   google__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
+
     // filter background
 
     // remove
@@ -242,6 +273,11 @@ if (fileName == "services.html") {
   });
 
   seo__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
     // filter background
 
     // remove
@@ -278,6 +314,11 @@ if (fileName == "services.html") {
   });
 
   email__marketing.addEventListener("click", () => {
+
+    // scroll to top on click and show from service header
+
+    window.scrollTo(0, 850);
+
     // filter background
 
     // remove
@@ -336,7 +377,6 @@ if (fileName == "services.html") {
     } else {
       console.log('kaj korchena')
       services__header.classList.remove('stickFilterToLeft')
-      servicesPage__body.style.background = "unset !important";
       servicesPage__body.classList.remove('serviceHeaderSpaceOnScroll');
     }
 
@@ -499,6 +539,38 @@ if (fileName == "video.html") {
     videoPage__bodyLiveAction.classList.add("videoServiceHide");
     videoPage__bodyPromoVideo.classList.add("videoServiceShow");
   });
+
+
+  
+
+  // filter onscroll
+
+  const videos__header = document.querySelector('.Videos__header');
+  const videos__body = document.querySelector('.videoPage__body');
+
+  window.addEventListener('scroll', () => {
+
+    console.clear();
+
+    const scrolled = window.scrollY;
+    
+    console.log(scrolled)
+
+    if(scrolled > 800){
+      console.log('hey')
+      videos__header.classList.add('stickFilterToLeft')
+      videos__body.classList.add('videoHeaderSpaceOnScroll');
+
+    } else {
+      console.log('kaj korchena')
+      videos__header.classList.remove('stickFilterToLeft')
+      videos__body.classList.remove('videoHeaderSpaceOnScroll');
+    }
+
+  })
+
+
+
 } else {
   //   console.log("video kaj korchen");
 }

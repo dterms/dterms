@@ -3281,6 +3281,20 @@ input[type="number"]::-webkit-outer-spin-button {
   .showmobilemenu {
     height: 60vh !important;
   }
+  .servicesPage .stickFilterToLeft {
+    top: 20%;
+  }
+  .servicesPage .stickFilterToLeft div {
+    padding: 0rem;
+    height: 30px;
+    width: 30px;
+  }
+  .servicesPage .stickFilterToLeft div img {
+    width: 75% !important;
+  }
+  .servicesPage .services__header {
+    grid-gap: 1rem;
+  }
 }
 
 /* for screen size in 670px in height */
@@ -3394,6 +3408,17 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .showmobilemenu {
     height: 90vh !important;
+  }
+  .servicesPage .services__header {
+    grid-gap: 0.5rem;
+  }
+  .servicesPage .stickFilterToLeft div {
+    padding: 0rem;
+    height: 25px;
+    width: 25px;
+  }
+  .servicesPage .stickFilterToLeft {
+    top: 25%;
   }
 }
 

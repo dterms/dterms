@@ -2862,6 +2862,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .services__bodyServiceBodyBottom ul {
     margin-left: 2rem;
   }
+  .services__bodyServiceBodyBottomBenifitsGrid {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
 /* for screen size 762px */
@@ -3187,6 +3190,65 @@ input[type="number"]::-webkit-outer-spin-button {
   .servicesPage .stickFilterToLeft {
     left: 8%;
   }
+  .services__bodyServiceBodyBottomBenifitsGrid {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* for screen size in 510 in width */
+@media screen and (max-width: 510px) {
+  .services__bodyService p:last-child {
+    color: gray;
+    font-size: .85rem;
+  }
+  .services__bodyServiceBodyBottom ul li {
+    font-size: .8rem;
+  }
+  .services__bodyServiceBodyTop p {
+    font-size: .8rem;
+  }
+  .services__bodyServiceBodyTopHeading, .services__bodyServiceBodyBottomHeading {
+    grid-template-columns: 15% 85%;
+  }
+  .development__bodyServiceProcessGrid {
+    grid-template-columns: 1fr;
+  }
+  .development__bodyServiceProcessItem img {
+    height: 200px;
+  }
+  .development__bodyServiceProcessItem:nth-child(2), .development__bodyServiceProcessItem:nth-child(4) {
+    position: unset;
+  }
+  .servicesPage .stickFilterToLeft {
+    left: 12%;
+  }
+  .servicesPage .stickFilterToLeft div {
+    padding: 0.5rem;
+    height: 40px;
+    width: 40px;
+  }
+  .servicesPage .stickFilterToLeft div img {
+    width: 100% !important;
+  }
+  .services__bodyServiceBodyTop ul li div {
+    font-size: .8rem;
+  }
+  .services__bodyServiceBodyTop p {
+    font-size: .85rem;
+  }
+  .services__bodyServiceBodyBottom ul {
+    margin-left: 1rem;
+  }
+  .services__bodyServiceBodyBottom ul li {
+    font-size: .85rem;
+  }
+  .services__bodyServiceBodyBottomBenifitsGrid {
+    grid-template-columns: 1fr;
+  }
+  .services__bodyServiceBodyBottom .buttons button {
+    margin-bottom: 1rem;
+  }
 }
 
 /* for screen size in 475px in width */
@@ -3258,52 +3320,26 @@ input[type="number"]::-webkit-outer-spin-button {
 
 }
 
-/* for screen size in 510 in width */
-@media screen and (max-width: 510px) {
-  .services__bodyService p:last-child {
-    color: gray;
-    font-size: .85rem;
+/* for screen size in 360px in height */
+@media screen and (max-width: 360px) {
+  .services__bodyServiceBodyTopHeading h3, .services__bodyServiceBodyBottomHeading h3 {
+    font-size: .9rem !important;
+  }
+  .services__bodyServiceBodyBottomPlanTitle p {
+    font-size: 0.8rem !important;
   }
   .services__bodyServiceBodyBottom ul li {
     font-size: .8rem;
+    margin-bottom: 1rem;
   }
   .services__bodyServiceBodyTop p {
     font-size: .8rem;
-  }
-  .services__bodyServiceBodyTopHeading, .services__bodyServiceBodyBottomHeading {
-    grid-template-columns: 15% 85%;
-  }
-  .development__bodyServiceProcessGrid {
-    grid-template-columns: 1fr;
-  }
-  .development__bodyServiceProcessItem img {
-    height: 200px;
-  }
-  .development__bodyServiceProcessItem:nth-child(2), .development__bodyServiceProcessItem:nth-child(4) {
-    position: unset;
-  }
-  .servicesPage .stickFilterToLeft {
-    left: 12%;
-  }
-  .servicesPage .stickFilterToLeft div {
-    padding: 0.5rem;
-    height: 40px;
-    width: 40px;
-  }
-  .servicesPage .stickFilterToLeft div img {
-    width: 100% !important;
   }
   .services__bodyServiceBodyTop ul li div {
-    font-size: .8rem;
-  }
-  .services__bodyServiceBodyTop p {
-    font-size: .85rem;
-  }
-  .services__bodyServiceBodyBottom ul {
-    margin-left: 1rem;
+    font-size: .75rem;
   }
   .services__bodyServiceBodyBottom ul li {
-    font-size: .85rem;
+    font-size: .75rem;
   }
 }
 

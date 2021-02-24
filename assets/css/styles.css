@@ -3193,6 +3193,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .services__bodyServiceBodyBottomBenifitsGrid {
     margin-bottom: 2rem;
   }
+  .servicesPage {
+    padding-top: 1rem;
+  }
 }
 
 

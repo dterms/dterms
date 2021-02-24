@@ -51,14 +51,14 @@ button {
 /* header style stars from here */
 
 header {
-	background: white;
-	box-shadow: 0 0 10px 0px #00000012;
-	position: sticky;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 3;
-	transition: all .5s;
+  background: white;
+  box-shadow: 0 0 10px 0px #00000012;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  transition: all 0.5s;
 }
 
 .header__right ul li a {
@@ -267,12 +267,12 @@ header {
   -o-transition: all 0.5s;
   display: none;
   background: white;
-	position: sticky;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 3;
-	transition: all .5s;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  transition: all 0.5s;
 }
 
 .showmobilemenu {
@@ -305,8 +305,6 @@ header {
   align-items: center;
 }
 
-
-
 .mobilemenu__header div {
   justify-self: end;
 }
@@ -333,9 +331,7 @@ header {
 
 /* mobile menu style ends here */
 
-
 /* play pop up starts here */
-
 
 .play__video {
   height: 100vh;
@@ -343,7 +339,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -671,11 +667,11 @@ header {
 }
 
 .newsletter .social img {
-	margin: 0 1rem;
-	background: white;
-	border-radius: 5px;
-	padding: 0.3rem;
-	/* box-shadow: 0 0 10px 0 #87ceebe8; */
+  margin: 0 1rem;
+  background: white;
+  border-radius: 5px;
+  padding: 0.3rem;
+  /* box-shadow: 0 0 10px 0 #87ceebe8; */
 }
 
 /* newsletter section ends here */
@@ -1362,15 +1358,13 @@ footer {
 .development__bodyServiceIntro div ul li p {
   font-size: 1rem;
   line-height: 2.8rem;
-  color: #888FB8;
+  color: #888fb8;
   font-weight: 500;
 }
 
-
-
 .development__bodyServiceProcess {
   padding: 5rem 0;
-  background: #F9FCFF;
+  background: #f9fcff;
 }
 .development__bodyServiceProcessHeader {
   text-align: center;
@@ -1405,9 +1399,10 @@ footer {
   box-shadow: 0 0 10px 0 #87ceeb4a;
   /* border-bottom: 3px solid lime; */
 }
-.development__bodyServiceProcessItem:nth-child(2), .development__bodyServiceProcessItem:nth-child(4) {
-	position: relative;
-	top: 30%;
+.development__bodyServiceProcessItem:nth-child(2),
+.development__bodyServiceProcessItem:nth-child(4) {
+  position: relative;
+  top: 30%;
 }
 .development__bodyServiceProcessItem div {
   padding: 2rem 2rem;
@@ -1418,7 +1413,7 @@ footer {
   margin-bottom: 1rem;
 }
 .development__bodyServiceProcessItem div p:last-child {
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: #92a0a6;
 }
@@ -1514,15 +1509,13 @@ footer {
 .graphic__bodyServiceIntro div ul li p {
   font-size: 1rem;
   line-height: 2.8rem;
-  color: #888FB8;
+  color: #888fb8;
   font-weight: 500;
 }
 
-
-
 .graphic__bodyServiceProcess {
   padding: 5rem 0;
-  background: #F9FCFF;
+  background: #f9fcff;
 }
 .graphic__bodyServiceProcessHeader {
   text-align: center;
@@ -1556,9 +1549,10 @@ footer {
   overflow: hidden;
   box-shadow: 0 0 10px 0 #87ceeb4a;
 }
-.graphic__bodyServiceProcessItem:nth-child(2), .graphic__bodyServiceProcessItem:nth-child(4) {
-	position: relative;
-	top: 30%;
+.graphic__bodyServiceProcessItem:nth-child(2),
+.graphic__bodyServiceProcessItem:nth-child(4) {
+  position: relative;
+  top: 30%;
 }
 .graphic__bodyServiceProcessItem div {
   padding: 2rem 2rem;
@@ -1569,7 +1563,7 @@ footer {
   margin-bottom: 1rem;
 }
 .graphic__bodyServiceProcessItem div p:last-child {
-  font-size: .85rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: #92a0a6;
 }
@@ -1675,11 +1669,11 @@ footer {
   margin-top: 2rem;
 }
 .videoPage__bodyAnimationBodyCenter {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .videoPage__bodyVideoBody ul {
   margin-top: 2rem;
@@ -2307,55 +2301,41 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* thankyou section ends here */
 
-
-
-
-
-
 /* ------------------------------------------------- */
 
-.stickFilterToLeft  {
-	grid-template-columns: 1fr;
-	width: 3%;
-	position: fixed;
-	top: 13%;
-	left: 5%;
+.stickFilterToLeft {
+  grid-template-columns: 1fr !important;
+  width: 3%;
+  position: fixed;
+  top: 13%;
+  left: 6%;
   z-index: 2;
 }
 
 .stickFilterToLeft div {
-  padding: .5rem;
+  padding: 0rem !important;
+  height: 40px;
+  width: 40px;
 }
 
-.stickFilterToLeft div img {
-	width: 60% !important;
-	margin: auto;
+.servicesPage .container .stickFilterToLeft div img,
+.videoPage .container .stickFilterToLeft div img,
+.developmentpage .container .stickFilterToLeft div img,
+.graphicpage .container .stickFilterToLeft div img {
+  width: 80% !important;
+  margin: auto;
 }
 
 .stickFilterToLeft div p {
-	display: none;
+  display: none;
 }
 
-.serviceHeaderSpaceOnScroll {
-  margin-top: 20rem;
-}
-
+.serviceHeaderSpaceOnScroll,
 .videoHeaderSpaceOnScroll {
-  margin-top: 27rem;
+  margin-top: 5rem;
 }
 
 /* ------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------------------------- */
 
@@ -2402,6 +2382,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .nav_item {
     margin: 0px 0.4rem;
+  }
+
+  .serviceHeaderSpaceOnScroll,
+  .videoHeaderSpaceOnScroll {
+    margin-top: 10rem;
   }
 }
 
@@ -2481,11 +2466,11 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 2rem 2rem;
   }
   .development__bodyServiceIntroSubHeading {
-    font-size: .9rem;
+    font-size: 0.9rem;
     width: 100%;
   }
   .development__bodyServiceIntro div ul li p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .development__bodyServiceIntro > img {
@@ -2494,7 +2479,38 @@ input[type="number"]::-webkit-outer-spin-button {
   .header__right ul li .quote {
     display: none;
   }
+  .videoPage__body {
+    width: 80%;
+    margin: auto;
+  }
+  .videoPage__bodyVideoBody ul li p {
+    font-size: 0.9rem;
+  }
+  .graphic__bodyServiceIntroSubHeading {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .graphic__bodyServiceIntro {
+    grid-template-columns: 40% 60%;
+  }
+  .graphic__bodyServiceIntro > img {
+    width: 100%;
+  }
+  .graphic__bodyServiceProcessGrid {
+    grid-gap: 1rem;
+  }
 
+  .graphic__bodyServiceProcessItem div {
+    padding: 1rem;
+  }
+  .graphic__bodyServiceProcessItem img {
+    height: 150px;
+  }
+
+  .serviceHeaderSpaceOnScroll,
+  .videoHeaderSpaceOnScroll {
+    margin-top: 12rem;
+  }
 }
 
 /* for screen size 1300px */
@@ -2537,15 +2553,17 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 125px;
   }
   .development__bodyServiceProcessItem div p:first-child {
-    font-size: .95rem;
+    font-size: 0.95rem;
   }
   .development__bodyServiceProcessItem div p:first-child {
     margin-bottom: 0rem;
   }
   .videoPage__bodyVideoBody ul li p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-
+  .container {
+    width: 75%;
+  }
 }
 
 /* for screen size 1200px */
@@ -2553,7 +2571,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .cart__bodyLeft {
     padding: 2rem 2rem;
   }
-  
+
   .header__right ul li a {
     font-size: 0.95rem !important;
   }
@@ -2573,7 +2591,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: none;
   }
   .development__bodyServiceIntro {
-    grid-template-columns: .4fr .6fr;
+    grid-template-columns: 0.4fr 0.6fr;
   }
   .development__bodyServiceProcessHeader p {
     width: 80%;
@@ -2581,7 +2599,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .header__right ul li .quote {
     display: none;
   }
-  
+
   .header__left img {
     width: 70%;
   }
@@ -2605,7 +2623,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .development__bodyServiceProcessGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .newsletter h1 {
     width: 75%;
   }
@@ -2614,6 +2632,10 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .header__right ul li a {
     font-size: 0.8rem !important;
+  }
+  .graphic__bodyServiceProcessGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
   }
 }
 
@@ -2646,7 +2668,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .whyus__left ul li {
     margin: 0rem 0;
   }
-  
+
   header {
     display: none;
   }
@@ -2654,9 +2676,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .mobilemenu {
     display: block;
   }
-
 }
-
 
 /* for screen size 1050px */
 @media screen and (max-width: 1050px) {
@@ -2759,8 +2779,39 @@ input[type="number"]::-webkit-outer-spin-button {
   .services__bodyServiceBodyTop ul {
     margin-left: 0rem;
   }
+  .graphic__bodyServiceIntro {
+    grid-template-columns: 1fr;
+  }
+  .graphic__bodyServiceIntro > img {
+    display: none;
+  }
+  .graphic__bodyServiceIntro div {
+    margin: 0;
+  }
+  .graphic__bodyServiceIntro div h1 {
+    font-size: 1.4rem;
+  }
+  .graphic__bodyServiceIntroSubHeading {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .graphic__bodyServiceIntro div ul li p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+  .graphic__bodyServiceProcessHeader h1 {
+    font-size: 2rem;
+  }
+  .graphic__bodyServiceProcessHeader p {
+    font-size: 0.85rem;
+    width: 100%;
+  }
+  
+  .serviceHeaderSpaceOnScroll,
+  .videoHeaderSpaceOnScroll {
+    margin-top: 15rem;
+  }
 }
-
 /* for screen size 900px */
 @media screen and (max-width: 900px) {
   .featured__body {
@@ -2881,34 +2932,33 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 50px;
     width: 50px;
   }
-  
+
   .servicesPage .stickFilterToLeft div img {
     width: 60% !important;
   }
   .services__bodyServiceBodyTop p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .services__bodyServiceBodyTop div {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
-  .services__bodyServiceBodyTopHeading h3, .services__bodyServiceBodyBottomHeading h3 {
+  .services__bodyServiceBodyTopHeading h3,
+  .services__bodyServiceBodyBottomHeading h3 {
     font-size: 1.4rem !important;
   }
   .services__bodyServiceBodyBottom ul li {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .services__bodyServiceBodyBottom ul {
     margin-left: 2rem;
   }
   .services__bodyServiceBodyBottomBenifitsGrid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* for screen size 762px */
 @media screen and (max-width: 762px) {
-
-
   .calltoaction__body .description {
     width: 80%;
     margin: 1rem auto;
@@ -2989,7 +3039,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .cart__bodyLeftBodyService div div p {
     font-size: 1.4rem;
     font-weight: 500;
-    color: #000000e6
+    color: #000000e6;
   }
   .number-input {
     border: none;
@@ -2999,7 +3049,8 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 1.5rem;
     height: 1.5rem;
   }
-  .number-input button::before, .number-input button::after {
+  .number-input button::before,
+  .number-input button::after {
     background-color: #21212154;
   }
   .number-input input[type="number"] {
@@ -3014,16 +3065,15 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .cart__bodyLeftBodyService .price {
     margin-left: 6rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    font-size: .85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
   }
   .cart__bodyLeftBodyService .price:last-child {
     color: rgb(0, 209, 139);
     font-weight: 500;
     margin-top: 1rem !important;
     font-size: 1rem;
-
   }
   .development__bodyServiceProcessHeader p {
     width: 100%;
@@ -3035,17 +3085,24 @@ input[type="number"]::-webkit-outer-spin-button {
   .servicesPage .stickFilterToLeft div img {
     width: 60% !important;
   }
-  .services__bodyServiceBodyTopHeading h3, .services__bodyServiceBodyBottomHeading h3 {
+  .services__bodyServiceBodyTopHeading h3,
+  .services__bodyServiceBodyBottomHeading h3 {
     font-size: 1rem !important;
   }
-  .services__bodyServiceBodyTopHeading, .services__bodyServiceBodyBottomHeading {
+  .services__bodyServiceBodyTopHeading,
+  .services__bodyServiceBodyBottomHeading {
     grid-template-columns: 10% 90%;
   }
   .services__bodyServiceBodyBottom ul {
     width: 100%;
   }
   .videoPage__bodyVideoHeader p {
-    font-size: .85rem;
+    font-size: 0.85rem;
+  }
+  .graphic__bodyServiceProcessItem:nth-child(2),
+  .graphic__bodyServiceProcessItem:nth-child(4) {
+    position: relative;
+    top: 0%;
   }
 }
 
@@ -3228,31 +3285,47 @@ input[type="number"]::-webkit-outer-spin-button {
   .featured__body {
     grid-template-columns: 1fr;
   }
-  .servicesPage .stickFilterToLeft {
-    left: 8%;
-  }
   .services__bodyServiceBodyBottomBenifitsGrid {
     margin-bottom: 2rem;
   }
   .servicesPage {
     padding-top: 1rem;
   }
-}
+  .development__bodyServiceIntro h1 {
+    font-size: 1.5rem;
+  }
+  .graphic__bodyServiceProcessGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  .graphic__bodyServiceProcessItem img {
+    height: 200px;
+  }
+  .serviceHeaderSpaceOnScroll,
+  .videoHeaderSpaceOnScroll {
+    margin-top: 18rem;
+  }
 
+  .graphic__bodyServiceIntro {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 /* for screen size in 510 in width */
 @media screen and (max-width: 510px) {
   .services__bodyService p:last-child {
     color: gray;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .services__bodyServiceBodyBottom ul li {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .services__bodyServiceBodyTop p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  .services__bodyServiceBodyTopHeading, .services__bodyServiceBodyBottomHeading {
+  .services__bodyServiceBodyTopHeading,
+  .services__bodyServiceBodyBottomHeading {
     grid-template-columns: 15% 85%;
   }
   .development__bodyServiceProcessGrid {
@@ -3261,11 +3334,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .development__bodyServiceProcessItem img {
     height: 200px;
   }
-  .development__bodyServiceProcessItem:nth-child(2), .development__bodyServiceProcessItem:nth-child(4) {
+  .development__bodyServiceProcessItem:nth-child(2),
+  .development__bodyServiceProcessItem:nth-child(4) {
     position: unset;
-  }
-  .servicesPage .stickFilterToLeft {
-    left: 12%;
   }
   .servicesPage .stickFilterToLeft div {
     padding: 0.5rem;
@@ -3276,22 +3347,47 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100% !important;
   }
   .services__bodyServiceBodyTop ul li div {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .services__bodyServiceBodyTop p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .services__bodyServiceBodyBottom ul {
     margin-left: 1rem;
   }
   .services__bodyServiceBodyBottom ul li {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .services__bodyServiceBodyBottomBenifitsGrid {
     grid-template-columns: 1fr;
   }
   .services__bodyServiceBodyBottom .buttons button {
     margin-bottom: 1rem;
+  }
+  .videoPage__bodyVideoHeader > h1 {
+    font-size: 1.3rem;
+  }
+  .videoPage__bodyVideoHeader p {
+    width: 100%;
+  }
+  .development__bodyServiceIntro div ul li {
+    margin: 1rem 0;
+  }
+  .development__bodyServiceIntro div ul li p {
+    line-height: 1.5rem;
+  }
+  .development__bodyServiceProcessHeader h1 {
+    font-size: 1.5rem;
+  }
+  .development__bodyServiceProcessHeader p {
+    width: 85%;
+    font-size: 0.85rem;
+  }
+  .developmentpage .development__header div p {
+    font-size: 0.8rem;
+  }
+  .graphicpage .graphic__header div p {
+    font-size: 0.8rem;
   }
 }
 
@@ -3361,29 +3457,47 @@ input[type="number"]::-webkit-outer-spin-button {
   .servicesPage .stickFilterToLeft div img {
     width: 90% !important;
   }
-
+  .development__bodyServiceIntro {
+    width: 80%;
+    margin: auto;
+  }
+  .development__bodyServiceIntro h1 {
+    font-size: 1.2rem;
+  }
+  .development__bodyServiceIntroSubHeading {
+    font-size: 0.8rem;
+  }
+  .development__bodyServiceIntro div ul li p {
+    font-size: 0.85rem;
+  }
+  .graphic__bodyServiceProcess {
+    padding: 0rem 0;
+    width: 90%;
+    margin: auto;
+  }
 }
 
 /* for screen size in 360px in height */
 @media screen and (max-width: 360px) {
-  .services__bodyServiceBodyTopHeading h3, .services__bodyServiceBodyBottomHeading h3 {
-    font-size: .9rem !important;
+  .services__bodyServiceBodyTopHeading h3,
+  .services__bodyServiceBodyBottomHeading h3 {
+    font-size: 0.9rem !important;
   }
   .services__bodyServiceBodyBottomPlanTitle p {
     font-size: 0.8rem !important;
   }
   .services__bodyServiceBodyBottom ul li {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
   }
   .services__bodyServiceBodyTop p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .services__bodyServiceBodyTop ul li div {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   .services__bodyServiceBodyBottom ul li {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -3444,7 +3558,6 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-
 /* for screen size in 560px in height */
 @media screen and (max-height: 560px) {
   .mobilemenu {
@@ -3500,7 +3613,6 @@ input[type="number"]::-webkit-outer-spin-button {
     grid-gap: 0rem;
   }
 }
-
 
 /* for screen size in 530px in height */
 @media screen and (max-height: 530px) {
@@ -3583,7 +3695,7 @@ input[type="number"]::-webkit-outer-spin-button {
     grid-row-gap: 1.5rem;
   }
   .services__bodyServiceBodyTop div {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 

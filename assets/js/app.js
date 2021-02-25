@@ -1,15 +1,14 @@
 // sticky menu
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("header").style.top = "0";
   } else {
     document.getElementById("header").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
-}
-
+};
 
 // mobile menu js
 const mobilemenu = document.querySelector(".mobilemenu");
@@ -20,7 +19,7 @@ const hamburger = document
   });
 
 // animation
-AOS.init({disable: 'mobile'});
+AOS.init({ disable: "mobile" });
 
 var fileName = location.pathname.substring(
   location.pathname.lastIndexOf("/") + 1
@@ -48,8 +47,6 @@ if (fileName == "services.html") {
   const email = document.querySelector(".emailMarketing");
 
   facebook__marketing.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -79,8 +76,6 @@ if (fileName == "services.html") {
   });
 
   twitter__marketing.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -112,8 +107,6 @@ if (fileName == "services.html") {
   });
 
   instagram__marketing.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -146,8 +139,6 @@ if (fileName == "services.html") {
   });
 
   linkedin__marketing.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -181,8 +172,6 @@ if (fileName == "services.html") {
   });
 
   youtube__marketing.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -217,9 +206,6 @@ if (fileName == "services.html") {
   });
 
   google__marketing.addEventListener("click", () => {
-
-
-
     // filter background
 
     // remove
@@ -255,8 +241,6 @@ if (fileName == "services.html") {
   });
 
   seo__marketing.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -293,8 +277,6 @@ if (fileName == "services.html") {
   });
 
   email__marketing.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -331,37 +313,28 @@ if (fileName == "services.html") {
     email.classList.add("servicesServiceShow");
   });
 
-
   // filter onscroll
 
-  const services__header = document.querySelector('.services__header');
-  const servicesPage__body = document.querySelector('.servicesPage__body');
+  const services__header = document.querySelector(".services__header");
+  const servicesPage__body = document.querySelector(".servicesPage__body");
 
-  window.addEventListener('scroll', () => {
-
+  window.addEventListener("scroll", () => {
     // console.clear();
 
     const scrolled = window.scrollY;
-    
+
     // console.log(scrolled)
 
-    if(scrolled > 800){
+    if (scrolled > 800) {
       // console.log('hey')
-      services__header.classList.add('stickFilterToLeft')
-      servicesPage__body.classList.add('serviceHeaderSpaceOnScroll');
-
+      services__header.classList.add("stickFilterToLeft");
+      servicesPage__body.classList.add("serviceHeaderSpaceOnScroll");
     } else {
       // console.log('kaj korchena')
-      services__header.classList.remove('stickFilterToLeft')
-      servicesPage__body.classList.remove('serviceHeaderSpaceOnScroll');
+      services__header.classList.remove("stickFilterToLeft");
+      servicesPage__body.classList.remove("serviceHeaderSpaceOnScroll");
     }
-
-  })
-
-
-
-} else {
-  //   console.log("eta service ja kaj korchen");
+  });
 }
 
 if (fileName == "video.html") {
@@ -387,9 +360,6 @@ if (fileName == "video.html") {
   );
 
   animation__video.addEventListener("click", () => {
-
-
-    
     // filter background
 
     // remove
@@ -414,9 +384,6 @@ if (fileName == "video.html") {
   });
 
   tvc__video.addEventListener("click", () => {
-
-
-    
     // filter background
 
     // remove
@@ -442,9 +409,6 @@ if (fileName == "video.html") {
   });
 
   ovc__video.addEventListener("click", () => {
-
-
-    
     // filter background
 
     // remove
@@ -471,9 +435,6 @@ if (fileName == "video.html") {
   });
 
   liveaction__video.addEventListener("click", () => {
-
-
-    
     // filter background
 
     // remove
@@ -501,9 +462,6 @@ if (fileName == "video.html") {
   });
 
   promo__video.addEventListener("click", () => {
-
-
-    
     // filter background
 
     // remove
@@ -531,43 +489,32 @@ if (fileName == "video.html") {
     videoPage__bodyPromoVideo.classList.add("videoServiceShow");
   });
 
-
-  
-
   // filter onscroll
 
-  const videos__header = document.querySelector('.Videos__header');
-  const videos__body = document.querySelector('.videoPage__body');
+  const videos__header = document.querySelector(".Videos__header");
+  const videos__body = document.querySelector(".videoPage__body");
 
-  window.addEventListener('scroll', () => {
-
+  window.addEventListener("scroll", () => {
     // console.clear();
 
     const scrolled = window.scrollY;
-    
+
     // console.log(scrolled)
 
-    if(scrolled > 700){
+    if (scrolled > 700) {
       // console.log('hey')
-      videos__header.classList.add('stickFilterToLeft')
-      videos__body.classList.add('videoHeaderSpaceOnScroll');
-
+      videos__header.classList.add("stickFilterToLeft");
+      videos__body.classList.add("videoHeaderSpaceOnScroll");
     } else {
       // console.log('kaj korchena')
-      videos__header.classList.remove('stickFilterToLeft')
-      videos__body.classList.remove('videoHeaderSpaceOnScroll');
+      videos__header.classList.remove("stickFilterToLeft");
+      videos__body.classList.remove("videoHeaderSpaceOnScroll");
     }
-
-  })
-
-
-
-} else {
-  //   console.log("video kaj korchen");
+  });
 }
 
 // for homepage counter
-if (fileName == "") {
+if (fileName == "" || fileName == "index.html") {
   // play video popup
   const play = document.querySelector(".play");
   const playShow = document.querySelector(".play__video");
@@ -602,8 +549,6 @@ if (fileName == "") {
     };
     updatecount();
   });
-} else {
-  //   console.log("counter kaj korchena");
 }
 
 if (fileName == "portfolio.html") {
@@ -636,7 +581,6 @@ if (fileName == "development.html") {
   const softwareDevelopment = document.querySelector(".softwareDevelopment");
 
   developwebsite.addEventListener("click", () => {
-
     // filter background
 
     // remove
@@ -657,8 +601,6 @@ if (fileName == "development.html") {
   });
 
   appDevlopment.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -680,8 +622,6 @@ if (fileName == "development.html") {
   });
 
   softwareDev.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -703,39 +643,29 @@ if (fileName == "development.html") {
     softwareDevelopment.classList.add("developmentShow");
   });
 
-    
-
   // filter onscroll
 
-  const developmentHeader = document.querySelector('.development__header');
-  const developmentBody = document.querySelector('.development__body');
+  const developmentHeader = document.querySelector(".development__header");
+  const developmentBody = document.querySelector(".development__body");
 
-  window.addEventListener('scroll', () => {
-
+  window.addEventListener("scroll", () => {
     // console.clear();
 
     const scrolled = window.scrollY;
-    
+
     // console.log(scrolled)
 
-    if(scrolled > 700){
+    if (scrolled > 700) {
       // console.log('hey')
-      developmentHeader.classList.add('stickFilterToLeft')
-      developmentBody.classList.add('videoHeaderSpaceOnScroll');
-
+      developmentHeader.classList.add("stickFilterToLeft");
+      developmentBody.classList.add("videoHeaderSpaceOnScroll");
     } else {
       // console.log('kaj korchena')
-      developmentHeader.classList.remove('stickFilterToLeft')
-      developmentBody.classList.remove('videoHeaderSpaceOnScroll');
+      developmentHeader.classList.remove("stickFilterToLeft");
+      developmentBody.classList.remove("videoHeaderSpaceOnScroll");
     }
-
-  })
-
-
-} else {
-  // console.log("development kaj korchen");
+  });
 }
-
 
 // graphic page
 if (fileName == "graphic.html") {
@@ -745,14 +675,20 @@ if (fileName == "graphic.html") {
   const publicationdesign = document.querySelector(".publicationdesign");
   const websitegraphic = document.querySelector(".websitegraphic");
 
-  const brandingdesignSection = document.querySelector(".brandingdesignSection");
-  const markettingdesignSection = document.querySelector(".markettingdesignSection");
-  const publicationdesginSection = document.querySelector(".publicationdesginSection");
-  const websitegraphicSection = document.querySelector(".websitegraphicSection");
+  const brandingdesignSection = document.querySelector(
+    ".brandingdesignSection"
+  );
+  const markettingdesignSection = document.querySelector(
+    ".markettingdesignSection"
+  );
+  const publicationdesginSection = document.querySelector(
+    ".publicationdesginSection"
+  );
+  const websitegraphicSection = document.querySelector(
+    ".websitegraphicSection"
+  );
 
   brandingdesign.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -775,8 +711,6 @@ if (fileName == "graphic.html") {
   });
 
   markettingdesign.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -800,8 +734,6 @@ if (fileName == "graphic.html") {
   });
 
   publicationdesign.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -825,10 +757,7 @@ if (fileName == "graphic.html") {
     publicationdesginSection.classList.add("developmentShow");
   });
 
-
   websitegraphic.addEventListener("click", () => {
-
-
     // filter background
 
     // remove
@@ -855,52 +784,81 @@ if (fileName == "graphic.html") {
 
   // filter onscroll
 
-  const graphicHeader = document.querySelector('.graphic__header');
-  const graphicBody = document.querySelector('.graphic__body');
+  const graphicHeader = document.querySelector(".graphic__header");
+  const graphicBody = document.querySelector(".graphic__body");
 
-  window.addEventListener('scroll', () => {
-
+  window.addEventListener("scroll", () => {
     // console.clear();
 
     const scrolled = window.scrollY;
-    
+
     // console.log(scrolled)
 
-    if(scrolled > 700){
+    if (scrolled > 700) {
       // console.log('hey')
-      graphicHeader.classList.add('stickFilterToLeft')
-      graphicBody.classList.add('videoHeaderSpaceOnScroll');
-
+      graphicHeader.classList.add("stickFilterToLeft");
+      graphicBody.classList.add("videoHeaderSpaceOnScroll");
     } else {
       // console.log('kaj korchena')
-      graphicHeader.classList.remove('stickFilterToLeft')
-      graphicBody.classList.remove('videoHeaderSpaceOnScroll');
+      graphicHeader.classList.remove("stickFilterToLeft");
+      graphicBody.classList.remove("videoHeaderSpaceOnScroll");
     }
+  });
+}
 
-  })
+// onclick scroll feature
+if (
+  fileName == "" ||
+  fileName == "index.html" ||
+  fileName == "video.html" ||
+  fileName == "development.html" ||
+  fileName == "graphic.html"
+) {
+  const filtermenuitem = Array.from(
+    document.querySelectorAll(".onClickScrollJS")
+  );
+  console.log(filtermenuitem);
 
+  let item;
 
-} else {
-  // console.log("graphic kaj korchen");
+  for (item of filtermenuitem) {
+    item.addEventListener("click", () => {
+      if (fileName == "services.html") {
+        scrollTo(0, 810);
+      } else if (fileName == "video.html") {
+        scrollTo(0, 750);
+      } else if (fileName == "development.html") {
+        scrollTo(0, 800);
+      } else if (fileName == "graphic.html") {
+        scrollTo(0, 800);
+      }
+    });
+  }
 }
 
 
-// onclick scroll feature
-const filtermenuitem = Array.from(document.querySelectorAll('.onClickScrollJS'));
-console.log(filtermenuitem)
+// package select
+if(fileName == "packageselect.html"){
+  const onetime = document.querySelector('#onetime');
+  const monthly = document.querySelector('#monthly');
+  const both = document.querySelector('#both');
+  
+  const buyservice__bodyLeft = document.querySelector('.buyservice__bodyLeft');
+  const buyservice__bodyRight = document.querySelector('.buyservice__bodyRight');
 
-let item;
-
-for (item of filtermenuitem){
-  item.addEventListener('click', () => {
-    if(fileName == "services.html"){
-      scrollTo(0, 810)  
-    } else if(fileName == "video.html"){
-      scrollTo(0, 750)  
-    } else if(fileName == "development.html"){
-      scrollTo(0, 800)  
-    } else if(fileName == "graphic.html"){
-      scrollTo(0, 800)  
-    }
+  onetime.addEventListener('click', () => {
+    buyservice__bodyLeft.classList.add('activeFilter');
+    buyservice__bodyRight.classList.remove('activeFilter');
   })
+
+  monthly.addEventListener('click', () => {
+    buyservice__bodyLeft.classList.remove('activeFilter');
+    buyservice__bodyRight.classList.add('activeFilter');
+  })
+
+  both.addEventListener('click', () => {
+    buyservice__bodyLeft.classList.add('activeFilter');
+    buyservice__bodyRight.classList.add('activeFilter');
+  })
+
 }

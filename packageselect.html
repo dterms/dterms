@@ -29,81 +29,94 @@
   <body>
     <!-- header section starts here -->
 
-    <header>
+    <header id="header">
       <div class="container d_flex justify_between a_center">
-        <div class="header__left">
-          <a href="index.html">
-            <img
-              src="./assets/images/homepage/header/logo.png"
-              alt="site logo"
-              class="img_fluid"
-            />
-          </a>
-        </div>
-        <div class="header__right">
-          <ul>
-            <li class="nav_item">
-              <a href="services.html" class="nav_link"
-                >Social Media Marketting</a
-              >
-            </li>
-            <li class="nav_item corporate position_relative">
-              <a href="video.html" class="nav_link">Video Creation</a>
-              <span>HOT </span>
-            </li>
-            <li class="nav_item">
-              <a href="services.html" class="nav_link">Development</a>
-            </li>
-            <li class="nav_item">
-              <a href="portfolio.html" class="nav_link">Portfolio</a>
-            </li>
-            <li class="nav_item">
-              <a href="tel:+1-847-555-5555" class="nav_link quote">
-                1-847-555-5555
-                <img src="assets/images/allicons/phone.svg" alt="" />
+          <div class="header__left">
+              <a href="index.html">
+                  <img src="./assets/images/homepage/header/logo.png" alt="site logo" class="img_fluid">
               </a>
-            </li>
-          </ul>
-        </div>
+          </div>
+          <div class="header__right">
+              <ul>
+                  <li class="nav_item">
+                      <a href="services.html" class="nav_link">Social Media Marketting</a>
+                  </li>
+                  <li class="nav_item corporate position_relative">
+                      <a href="video.html" class="nav_link">Video Creation</a>
+                      <span>HOT </span>
+                  </li>
+                  <li class="nav_item">
+                      <a href="development.html" class="nav_link">Development</a>
+                  </li>
+                  <li class="nav_item">
+                      <a href="graphic.html" class="nav_link">Graphic Design</a>
+                  </li>
+                  <li class="nav_item">
+                      <a href="portfolio.html" class="nav_link">Portfolio</a>
+                  </li>
+                  <li class="nav_item">
+                      <a href="tel:+1-847-555-5555" class="nav_link quote">
+                          <span>+880123456789</span>
+                          <img src="assets/images/allicons/phone.svg" alt="">
+                      </a>
+                  </li>
+                  <li class="nav_item">
+                      <a href="#" class="nav_link bag">
+                          <img src="assets/images/allicons/shopping-bag.svg" alt="">
+                          <p>3</p>
+                      </a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </header>
+  </header>
 
-    <section class="mobilemenu">
+
+
+
+  <section id="mmenu" class="mobilemenu">
       <div class="container">
-        <div class="mobilemenu__header">
-          <img src="assets/images/homepage/header/logo.png" alt="site logo" />
-          <img
-            src="assets/images/allicons/align-left.svg"
-            class="hamburger"
-            id="amarmenu"
-            alt="hamburger"
-          />
-        </div>
-        <div class="mobilemenu__body">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li class="mobilemenu__bodyCorporate position_relative">
-              <a href="video.html">Video Creation</a>
-              <span>HOT </span>
-            </li>
-            <li>
-              <a href="services.html">Services</a>
-            </li>
-            <li>
-              <a href="portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a href="tel:+1-847-555-5555" class="mobilemenu__bodyQuote">
-                1-847-555-5555
-                <img src="assets/images/allicons/phone.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div class="mobilemenu__header">
+              <img src="assets/images/homepage/header/logo.png" alt="site logo">
+              <div>
+                  <a href="checkout.html">
+                      <img src="./assets/images/allicons/shopping-bag.svg" alt="">
+                  </a>
+                  <img src="assets/images/allicons/align-left.svg"
+                  class="hamburger cursor_pointer ml_3  nn            " id="amarmenu" alt="hamburger">
+              </div>
+          </div>
+          <div class="mobilemenu__body">
+              <ul>
+                  <li>
+                      <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                      <a href="services.html">Social Media Marketting</a>
+                  </li>
+                  <li class="mobilemenu__bodyCorporate position_relative">
+                      <a href="video.html">Video Creation</a>
+                      <span>HOT </span>
+                  </li>
+                  <li>
+                      <a href="development.html">Development</a>
+                  </li>
+                  <li>
+                      <a href="graphic.html">Graphic Design</a>
+                  </li>
+                  <li>
+                      <a href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li>
+                      <a href="tel:+1-847-555-5555" class="mobilemenu__bodyQuote">
+                          1-847-555-5555
+                          <img src="assets/images/allicons/phone.svg" alt="">
+                      </a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </section>
+  </section>
 
     <!-- header section ends here -->
 
@@ -175,20 +188,6 @@
                 </p>
               </li>
             </ul>
-            <div class="buyservice__footerSubmit">
-              <a href="">
-                <input
-                  type="submit"
-                  value="Add to bag"
-                  class="btn btn_primary btn_round"
-                />
-              </a>
-              <a href="">
-                <button class="btn btn_primary btn_round mt_3">
-                  Purchase Now
-                </button>
-              </a>
-            </div>
           </div>
           <div class="buyservice__bodyRight package">
             <p class="title">
@@ -244,22 +243,34 @@
                 </p>
               </li>
             </ul>
-            <div class="buyservice__footerSubmit">
-              <a href="">
-                <input
-                  type="submit"
-                  value="Add to bag"
-                  class="btn btn_primary btn_round btn_primary_outline"
-                />
-              </a>
-              <a href="">
-                <button class="btn btn_primary btn_round mt_3">
-                  Purchase Now
-                </button>
-              </a>
-            </div>
           </div>
         </div>
+        
+      <div class="buyservice__footer">
+
+        <form action="" class="mb_3">
+          <div class="buyservice__footerSelection">
+
+            <input type="radio" name="packageselected" id="onetime">
+            <label for="onetime">One time</label>
+            <input type="radio" name="packageselected" id="monthly">
+            <label for="monthly">Monthly</label>
+            <input type="radio" name="packageselected" id="both">
+            <label for="both">Both</label>
+
+          </div>
+
+          <div class="buyservice__footerSubmit">
+            <input type="submit" value="Add to bag" class="btn btn_primary btn_round">
+            <a href="checkout.html">
+              <button class="btn btn_primary btn_round mt_3">Purchase Now</button>
+            </a>
+          </div>
+
+        </form>
+
+
+      </div>
       </div>
     </div>
 
@@ -287,6 +298,73 @@
       </div>
     </section>
     <!-- call to action buttons ends here -->
+
+        
+    <!-- cart slide sesction starts here -->
+
+    
+    <div class="cartslide">
+      <div class="cartslide__left"></div>
+      <div class="cartslide__right">
+          <div class="cartslide__rightHeader d_flex justify_between a_center">
+              <h3>SHOPPING CART</h3>
+              <img src="./assets/images/allicons/x-black.svg" class="closecartslide cursor_pointer mr_1" alt="close icon">
+          </div>
+          <div class="cartslide__rightBody">
+              <div class="d_flex justify_between">
+                  <div class="d_flex">
+                      <img src="./assets/images/service/serviceHeader/facebook_108044.svg" alt="service">
+                      <div class="ml_1">
+                          <p>Facebook Marketting</p>
+                          <p>$360.00</p>
+                      </div>
+                  </div>
+                  <a href="">
+                      <p class="mr_2 cancel">x</p>
+                  </a>
+              </div>
+              <div class="d_flex justify_between">
+                  <div class="d_flex">
+                      <img src="./assets/images/service/serviceHeader/facebook_108044.svg" alt="service">
+                      <div class="ml_1">
+                          <p>Facebook Marketting</p>
+                          <p>$360.00</p>
+                      </div>
+                  </div>
+                  <a href="">
+                      <p class="mr_2 cancel">x</p>
+                  </a>
+              </div>
+              <div class="d_flex justify_between">
+                  <div class="d_flex">
+                      <img src="./assets/images/service/serviceHeader/facebook_108044.svg" alt="service">
+                      <div class="ml_1">
+                          <p>Facebook Marketting</p>
+                          <p>$360.00</p>
+                      </div>
+                  </div>
+                  <a href="">
+                      <p class="mr_2 cancel">x</p>
+                  </a>
+              </div>
+          </div>
+          <div class="cartslide__rightBottom">
+              <div class="cartslide__rightBottomHeader d_flex justify_between a_center mb_2">
+                  <h2>Total</h2>
+                  <p class="mr_2">$360.00</p>
+              </div>
+              <a href="">
+                  <button class="btn d_block btn_large btn_round mb_2">View cart</button>
+              </a>
+              <a href="checkout.html">
+                  <button class="btn btn_primary d_block btn_large btn_round mb_2">Checkout</button>
+              </a>
+          </div>
+      </div>
+  </div>
+
+
+<!-- cart slide sesction ends here -->
 
     <!-- footer section starts here -->
 

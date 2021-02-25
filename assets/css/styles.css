@@ -1473,9 +1473,9 @@ footer {
   margin-top: 0.4rem;
 }
 
-.markettingdesign,
-.publicationdesign,
-.websitegraphic {
+.markettingdesignSection,
+.publicationdesginSection,
+.websitegraphicSection {
   display: none;
 }
 
@@ -2318,6 +2318,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 40px;
 }
 
+
 .servicesPage .container .stickFilterToLeft div img,
 .videoPage .container .stickFilterToLeft div img,
 .developmentpage .container .stickFilterToLeft div img,
@@ -2330,8 +2331,8 @@ input[type="number"]::-webkit-outer-spin-button {
   display: none;
 }
 
-.serviceHeaderSpaceOnScroll,
-.videoHeaderSpaceOnScroll {
+.stickFilterToLeft .serviceHeaderSpaceOnScroll,
+.stickFilterToLeft .videoHeaderSpaceOnScroll {
   margin-top: 5rem;
 }
 

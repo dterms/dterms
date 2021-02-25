@@ -49,9 +49,6 @@ if (fileName == "services.html") {
 
   facebook__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -83,9 +80,6 @@ if (fileName == "services.html") {
 
   twitter__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -119,9 +113,6 @@ if (fileName == "services.html") {
 
   instagram__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -156,9 +147,6 @@ if (fileName == "services.html") {
 
   linkedin__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -194,9 +182,6 @@ if (fileName == "services.html") {
 
   youtube__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -233,9 +218,6 @@ if (fileName == "services.html") {
 
   google__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
 
     // filter background
@@ -274,9 +256,6 @@ if (fileName == "services.html") {
 
   seo__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -315,9 +294,6 @@ if (fileName == "services.html") {
 
   email__marketing.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -363,19 +339,19 @@ if (fileName == "services.html") {
 
   window.addEventListener('scroll', () => {
 
-    console.clear();
+    // console.clear();
 
     const scrolled = window.scrollY;
     
-    console.log(scrolled)
+    // console.log(scrolled)
 
     if(scrolled > 800){
-      console.log('hey')
+      // console.log('hey')
       services__header.classList.add('stickFilterToLeft')
       servicesPage__body.classList.add('serviceHeaderSpaceOnScroll');
 
     } else {
-      console.log('kaj korchena')
+      // console.log('kaj korchena')
       services__header.classList.remove('stickFilterToLeft')
       servicesPage__body.classList.remove('serviceHeaderSpaceOnScroll');
     }
@@ -412,9 +388,7 @@ if (fileName == "video.html") {
 
   animation__video.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     
     // filter background
 
@@ -441,9 +415,7 @@ if (fileName == "video.html") {
 
   tvc__video.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     
     // filter background
 
@@ -471,9 +443,7 @@ if (fileName == "video.html") {
 
   ovc__video.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     
     // filter background
 
@@ -502,9 +472,7 @@ if (fileName == "video.html") {
 
   liveaction__video.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     
     // filter background
 
@@ -534,9 +502,7 @@ if (fileName == "video.html") {
 
   promo__video.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     
     // filter background
 
@@ -575,19 +541,19 @@ if (fileName == "video.html") {
 
   window.addEventListener('scroll', () => {
 
-    console.clear();
+    // console.clear();
 
     const scrolled = window.scrollY;
     
-    console.log(scrolled)
+    // console.log(scrolled)
 
     if(scrolled > 700){
-      console.log('hey')
+      // console.log('hey')
       videos__header.classList.add('stickFilterToLeft')
       videos__body.classList.add('videoHeaderSpaceOnScroll');
 
     } else {
-      console.log('kaj korchena')
+      // console.log('kaj korchena')
       videos__header.classList.remove('stickFilterToLeft')
       videos__body.classList.remove('videoHeaderSpaceOnScroll');
     }
@@ -671,9 +637,6 @@ if (fileName == "development.html") {
 
   developwebsite.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
     // filter background
 
     // remove
@@ -695,9 +658,6 @@ if (fileName == "development.html") {
 
   appDevlopment.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -721,9 +681,6 @@ if (fileName == "development.html") {
 
   softwareDev.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
-
-    window.scrollTo(0, 850);
 
     // filter background
 
@@ -755,19 +712,19 @@ if (fileName == "development.html") {
 
   window.addEventListener('scroll', () => {
 
-    console.clear();
+    // console.clear();
 
     const scrolled = window.scrollY;
     
-    console.log(scrolled)
+    // console.log(scrolled)
 
     if(scrolled > 700){
-      console.log('hey')
+      // console.log('hey')
       developmentHeader.classList.add('stickFilterToLeft')
       developmentBody.classList.add('videoHeaderSpaceOnScroll');
 
     } else {
-      console.log('kaj korchena')
+      // console.log('kaj korchena')
       developmentHeader.classList.remove('stickFilterToLeft')
       developmentBody.classList.remove('videoHeaderSpaceOnScroll');
     }
@@ -795,9 +752,7 @@ if (fileName == "graphic.html") {
 
   brandingdesign.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     // filter background
 
     // remove
@@ -821,9 +776,7 @@ if (fileName == "graphic.html") {
 
   markettingdesign.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     // filter background
 
     // remove
@@ -848,9 +801,7 @@ if (fileName == "graphic.html") {
 
   publicationdesign.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     // filter background
 
     // remove
@@ -877,9 +828,7 @@ if (fileName == "graphic.html") {
 
   websitegraphic.addEventListener("click", () => {
 
-    // scroll to top on click and show from service header
 
-    window.scrollTo(0, 850);
     // filter background
 
     // remove
@@ -911,19 +860,19 @@ if (fileName == "graphic.html") {
 
   window.addEventListener('scroll', () => {
 
-    console.clear();
+    // console.clear();
 
     const scrolled = window.scrollY;
     
-    console.log(scrolled)
+    // console.log(scrolled)
 
     if(scrolled > 700){
-      console.log('hey')
+      // console.log('hey')
       graphicHeader.classList.add('stickFilterToLeft')
       graphicBody.classList.add('videoHeaderSpaceOnScroll');
 
     } else {
-      console.log('kaj korchena')
+      // console.log('kaj korchena')
       graphicHeader.classList.remove('stickFilterToLeft')
       graphicBody.classList.remove('videoHeaderSpaceOnScroll');
     }
@@ -933,4 +882,25 @@ if (fileName == "graphic.html") {
 
 } else {
   // console.log("graphic kaj korchen");
+}
+
+
+// onclick scroll feature
+const filtermenuitem = Array.from(document.querySelectorAll('.onClickScrollJS'));
+console.log(filtermenuitem)
+
+let item;
+
+for (item of filtermenuitem){
+  item.addEventListener('click', () => {
+    if(fileName == "services.html"){
+      scrollTo(0, 810)  
+    } else if(fileName == "video.html"){
+      scrollTo(0, 750)  
+    } else if(fileName == "development.html"){
+      scrollTo(0, 800)  
+    } else if(fileName == "graphic.html"){
+      scrollTo(0, 800)  
+    }
+  })
 }

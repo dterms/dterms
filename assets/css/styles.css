@@ -683,7 +683,8 @@ header {
 /* map section starts here */
 
 .map {
-  padding: 5rem 0;
+  padding: 1rem 0;
+  padding-bottom: 3rem;
 }
 
 .map__body .title {

@@ -13,7 +13,10 @@ a,
 input,
 textarea,
 label,
-span {
+span,
+select,
+option,
+small {
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -43,7 +46,7 @@ button {
   text-align: center;
   font-weight: 300;
   color: gray;
-  margin: 0.4rem 0 3rem 0;
+  margin: 0.4rem 0 1rem 0;
 }
 
 /* default elements styles ends from here */
@@ -57,13 +60,17 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 2;
   transition: all 0.5s;
 }
 
 .header__right ul li a {
   font-size: 1rem !important;
   font-family: "Poppins", sans-serif !important;
+}
+
+.header__right ul li .active {
+  color: dodgerblue;
 }
 
 .header__right ul .corporate {
@@ -142,6 +149,7 @@ header {
   /* min-height: 30vh; */
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .header__bottom .container {
@@ -407,7 +415,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 4rem;
-  grid-row-gap: 6rem;
+  grid-row-gap: 1rem;
 }
 
 .services__bodyServiceThumbnail {
@@ -569,8 +577,8 @@ header {
 }
 
 .portfolio__bodyPortfolio:hover .portfolio__bodyPortfolioContent {
-  background: #87ceeb45;
   transition: all 0.5s;
+  border-bottom: 4px solid dodgerblue;
 }
 .portfolio__bodyPortfolioThumbnail img {
   border-radius: 1rem;
@@ -585,6 +593,7 @@ header {
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+  border-bottom: 4px solid transparent;
 }
 .portfolio__bodyPortfolioContent .portfolio__title {
   font-size: 1.3rem;
@@ -597,8 +606,16 @@ header {
   background: dodgerblue;
   color: white;
   border-radius: 30px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
-
+.btn.seeall:hover {
+  border-radius: 10px;
+  padding-left: 1.5rem;
+}
 /* portfolio section ends here */
 
 /* trusted section starts here */
@@ -695,7 +712,7 @@ header {
 }
 
 .map__body div div p {
-  font-size: .95rem;
+  font-size: 0.95rem;
   color: gray;
 }
 
@@ -1549,7 +1566,38 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px 0 #87ceeb4a;
+  position: relative;
 }
+.graphic__bodyServiceProcessItem::before {
+  content: "#1";
+  background: dodgerblue;
+  color: white;
+  font-family: "Poppins", san-serif;
+  font-size: 1.5rem;
+  padding: 2rem;
+  position: absolute;
+  top: -7%;
+  left: -10%;
+  height: 30px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.graphic__bodyServiceProcessItem:first-child::before {
+  content: "#1";
+}
+.graphic__bodyServiceProcessItem:nth-child(2)::before {
+  content: "#2";
+}
+.graphic__bodyServiceProcessItem:nth-child(3)::before {
+  content: "#3";
+}
+.graphic__bodyServiceProcessItem:nth-child(4)::before {
+  content: "#4";
+}
+
 .graphic__bodyServiceProcessItem:nth-child(2),
 .graphic__bodyServiceProcessItem:nth-child(4) {
   position: relative;
@@ -2303,6 +2351,61 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* thankyou section ends here */
 
+/* popup section starts here */
+
+.popup__form {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  display: none;
+}
+.popup__form form div {
+  margin-bottom: 1rem;
+}
+.popup__form form div label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+.popup__form form h3 {
+  color: #00ce5a;
+}
+.popup__form form {
+  background: white;
+  width: 24%;
+  border-radius: 5px;
+  padding: 2rem 3rem;
+}
+.popup__form form div input,
+.popup__form form div select,
+.popup__form form div textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #d1d1d1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", san-serif;
+  color: rgb(97, 97, 97);
+}
+
+.showPopUpForm {
+  display: flex;
+}
+
+/* popup section ends here */
+
 /* ------------------------------------------------- */
 
 .stickFilterToLeft {
@@ -2319,7 +2422,6 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 40px;
   width: 40px;
 }
-
 
 .servicesPage .container .stickFilterToLeft div img,
 .videoPage .container .stickFilterToLeft div img,
@@ -2390,6 +2492,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .serviceHeaderSpaceOnScroll,
   .videoHeaderSpaceOnScroll {
     margin-top: 10rem;
+  }
+  .popup__form form {
+    width: 35%;
   }
 }
 
@@ -2682,6 +2787,10 @@ input[type="number"]::-webkit-outer-spin-button {
   .whyus__left ul li {
     margin: 0rem 0;
   }
+  
+  .popup__form form {
+    width: 55%;
+  }
 }
 
 /* for screen size 1050px */
@@ -2812,7 +2921,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 0.85rem;
     width: 100%;
   }
-  
+
   .serviceHeaderSpaceOnScroll,
   .videoHeaderSpaceOnScroll {
     margin-top: 15rem;
@@ -3316,6 +3425,23 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 90%;
     margin: auto;
   }
+  
+  .popup__form form {
+    width: 75%;
+    padding: 2rem 1.5rem;
+  }
+  .popup__form form div {
+    margin-bottom: 0rem;
+  }
+  .popup__form form div label {
+    margin-top: .5rem;
+  }
+  .popup__form form div input, .popup__form form div select, .popup__form form div textarea {
+    padding: 0.1rem 0.5rem;
+  }
+  .popup__form form .submit {
+    margin-top: 1rem;
+  }
 }
 
 /* for screen size in 510 in width */
@@ -3480,6 +3606,26 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 0rem 0;
     width: 90%;
     margin: auto;
+  }
+  .thankyou__header {
+    padding: 3rem 0;
+  }
+  .thankyou__bodyHeader h1 {
+    font-size: 1rem;
+  }
+  .thankyou__header p {
+    font-size: 1.2rem;
+  }
+  .thankyou__bodyHeader div p {
+    font-size: 0.9rem;
+    color: #80808091;
+  }
+  .thankyou__bodyFooter h1 {
+    font-size: 1.5rem;
+  }
+  .thankyou__bodyFooter .services div p {
+    color: gray;
+    font-size: 0.85rem;
   }
 }
 

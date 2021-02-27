@@ -1,3 +1,5 @@
+'use strict_method';
+
 // sticky menu
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -826,7 +828,7 @@ if (
       if (fileName == "services.html") {
         scrollTo(0, 810);
       } else if (fileName == "video.html") {
-        scrollTo(0, 750);
+        scrollTo(0, 600);
       } else if (fileName == "development.html") {
         scrollTo(0, 800);
       } else if (fileName == "graphic.html") {
@@ -835,6 +837,20 @@ if (
     });
   }
 }
+
+
+// pop up form
+const popupformbutton = document.querySelector('.calltoaction button');
+const popupform = document.querySelector('.popup__form');
+const closeform = document.querySelector('.close_form');
+
+popupformbutton.addEventListener('click', () => {
+  popupform.classList.add('showPopUpForm');
+})
+
+closeform.addEventListener('click', () => {
+  popupform.classList.remove('showPopUpForm');
+})
 
 
 // package select

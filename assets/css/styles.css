@@ -786,6 +786,7 @@ footer {
 
 .breadcums {
   background: #f9fcff;
+  overflow: hidden;
 }
 
 .breadcums__header {
@@ -2787,7 +2788,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .whyus__left ul li {
     margin: 0rem 0;
   }
-  
+
   .popup__form form {
     width: 55%;
   }
@@ -3425,7 +3426,7 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 90%;
     margin: auto;
   }
-  
+
   .popup__form form {
     width: 75%;
     padding: 2rem 1.5rem;
@@ -3434,13 +3435,61 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-bottom: 0rem;
   }
   .popup__form form div label {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
-  .popup__form form div input, .popup__form form div select, .popup__form form div textarea {
+  .popup__form form div input,
+  .popup__form form div select,
+  .popup__form form div textarea {
     padding: 0.1rem 0.5rem;
   }
   .popup__form form .submit {
     margin-top: 1rem;
+  }
+}
+
+
+/* for screen size in 550 in width */
+@media screen and (max-width: 550px) {
+  .counter .count {
+    margin: 0 !important;
+  }
+
+  .counter .count img {
+    width: 35%;
+    margin-right: 1rem;
+  }
+
+  .counter .count h1 {
+    font-size: 2.5rem;
+  }
+
+  .services__bodyService {
+    margin: 0;
+  }
+
+  .section__heading {
+    font-size: 1.5rem;
+  }
+
+  .services .container {
+    padding: 2rem;
+    width: 80%;
+  }
+
+  .services__bodyService .service__title {
+    font-size: 1.2rem;
+  }
+
+  .services__bodyDescription {
+    font-size: 0.9rem;
+  }
+
+  .services__bodyServiceLearn p {
+    font-size: 0.91rem;
+  }
+
+  .whyus .container {
+    grid-gap: 0rem;
   }
 }
 
@@ -3721,48 +3770,17 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-/* for screen size in 550 in width */
-@media screen and (max-width: 550px) {
-  .counter .count {
-    margin: 0 !important;
+/* for screen size in 570px in height */
+@media screen and (max-height: 570px) {
+  .showPopUpForm {
+    display: block !important;
+    overflow: scroll;
   }
-
-  .counter .count img {
-    width: 35%;
-    margin-right: 1rem;
+  .popup__form form {
+    margin: 5rem auto;
   }
-
-  .counter .count h1 {
-    font-size: 2.5rem;
-  }
-
-  .services__bodyService {
-    margin: 0;
-  }
-
-  .section__heading {
-    font-size: 1.5rem;
-  }
-
-  .services .container {
-    padding: 2rem;
-    width: 80%;
-  }
-
-  .services__bodyService .service__title {
-    font-size: 1.2rem;
-  }
-
-  .services__bodyDescription {
-    font-size: 0.9rem;
-  }
-
-  .services__bodyServiceLearn p {
-    font-size: 0.91rem;
-  }
-
-  .whyus .container {
-    grid-gap: 0rem;
+  .calltoaction .square {
+    top: 60%;
   }
 }
 

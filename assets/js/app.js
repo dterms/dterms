@@ -830,9 +830,9 @@ if (
       } else if (fileName == "video.html") {
         scrollTo(0, 600);
       } else if (fileName == "development.html") {
-        scrollTo(0, 800);
+        scrollTo(0, 750);
       } else if (fileName == "graphic.html") {
-        scrollTo(0, 800);
+        scrollTo(0, 750);
       }
     });
   }

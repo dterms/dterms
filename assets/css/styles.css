@@ -1569,34 +1569,19 @@ footer {
   box-shadow: 0 0 10px 0 #87ceeb4a;
   position: relative;
 }
-.graphic__bodyServiceProcessItem::before {
-  content: "#1";
-  background: dodgerblue;
-  color: white;
-  font-family: "Poppins", san-serif;
-  font-size: 1.5rem;
-  padding: 2rem;
-  position: absolute;
-  top: -7%;
-  left: -10%;
-  height: 30px;
-  width: 35px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-}
-.graphic__bodyServiceProcessItem:first-child::before {
-  content: "#1";
-}
-.graphic__bodyServiceProcessItem:nth-child(2)::before {
-  content: "#2";
-}
-.graphic__bodyServiceProcessItem:nth-child(3)::before {
-  content: "#3";
-}
-.graphic__bodyServiceProcessItem:nth-child(4)::before {
-  content: "#4";
+.graphic__bodyServiceProcessItem span {
+	position: absolute;
+	top: -5%;
+	left: -5%;
+	background: dodgerblue;
+	font-size: 2rem;
+	color: white;
+	border-radius: 50%;
+	height: 85px;
+	width: 85px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .graphic__bodyServiceProcessItem:nth-child(2),
@@ -2588,10 +2573,6 @@ input[type="number"]::-webkit-outer-spin-button {
   .header__right ul li .quote {
     display: none;
   }
-  .videoPage__body {
-    width: 80%;
-    margin: auto;
-  }
   .videoPage__bodyVideoBody ul li p {
     font-size: 0.9rem;
   }
@@ -2620,6 +2601,13 @@ input[type="number"]::-webkit-outer-spin-button {
   .videoHeaderSpaceOnScroll {
     margin-top: 12rem;
   }
+  .breadcums__header a {
+    font-size: .8rem;
+  }
+  .breadcums__body div h1 {
+    font-size: 2rem;
+  }
+
 }
 
 /* for screen size 1300px */
@@ -3071,6 +3059,30 @@ input[type="number"]::-webkit-outer-spin-button {
   .services__bodyServiceBodyBottomBenifitsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .breadcums__header a {
+    font-size: .7rem;
+  }
+  .breadcums__body div p {
+    font-size: 0.8rem;
+  }
+  .graphicpage .graphic__header div p {
+    font-size: .75rem;
+  }
+  .graphic__bodyService {
+    padding: 2rem 0;
+  }
+  .graphic__bodyServiceProcessHeader h1 {
+    font-size: 1.5rem;
+  }
+  .graphic__bodyServiceProcessHeader p {
+    width: 70%;
+  }
+  .graphic__bodyServiceProcessGrid {
+    margin: 3rem 0;
+  }
+  .controls button {
+    font-size: .8rem;
+  }
 }
 
 /* for screen size 762px */
@@ -3230,10 +3242,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .featured__bodyPortfolio {
     width: 100%;
-  }
-
-  .controls button {
-    font-size: 0.9rem;
   }
 
   .breadcums__body img {
@@ -3445,6 +3453,28 @@ input[type="number"]::-webkit-outer-spin-button {
   .popup__form form .submit {
     margin-top: 1rem;
   }
+  .graphic__bodyServiceProcess {
+    padding: 1rem 0;
+  }
+  .developmentpage .development__header div p {
+    font-size: .75rem;
+  }
+  .development__bodyServiceIntro div ul li {
+    margin: 1rem 0;
+  }
+  .development__bodyServiceProcess {
+    padding: 2rem 0;
+    padding-bottom: 7rem;
+  }
+  .development__bodyServiceProcessHeader h1 {
+    font-size: 1.5rem;
+  }
+  .development__bodyServiceProcessHeader p {
+    font-size: .8rem;
+  }
+  .featured .container > h1 {
+    font-size: 1.4rem;
+  }
 }
 
 
@@ -3490,6 +3520,38 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .whyus .container {
     grid-gap: 0rem;
+  }
+
+  .controls button {
+    margin: 0 .2rem;
+  }
+
+  .controls button {
+    font-size: 0.85rem;
+  }
+  .breadcums__body div p {
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+  .breadcums__header a {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .breadcums__body div h1 {
+    font-size: 1.7rem;
+  }
+  .featured .container > h1 {
+    font-size: 1.2rem;
+  }
+  .calltoaction h1 {
+    font-size: 1.3rem;
+  }
+  .calltoaction button {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+  .graphic__bodyServiceProcessHeader p {
+    width: 100%;
   }
 }
 

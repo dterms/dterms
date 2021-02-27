@@ -1,5 +1,3 @@
-'use strict_method';
-
 // sticky menu
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -26,7 +24,7 @@ AOS.init({ disable: "mobile" });
 var fileName = location.pathname.substring(
   location.pathname.lastIndexOf("/") + 1
 );
-// console.log(fileName)
+console.log(fileName)
 
 if (fileName == "services.html") {
   // services filter
@@ -769,7 +767,7 @@ if (fileName == "graphic.html") {
     websitegraphic.classList.remove("activeFilter");
 
     // adding class
-    publicationdesign.classList.add("activeFilter");
+    websitegraphic.classList.add("activeFilter");
 
     // removing class
     brandingdesignSection.classList.remove("developmentShow");
@@ -826,12 +824,16 @@ if (
   for (item of filtermenuitem) {
     item.addEventListener("click", () => {
       if (fileName == "services.html") {
-        scrollTo(0, 810);
-      } else if (fileName == "video.html") {
+        scrollTo(0, 2010);
+        alert('something')
+      }
+       if (fileName == "video.html") {
         scrollTo(0, 600);
-      } else if (fileName == "development.html") {
+      }
+       if (fileName == "development.html") {
         scrollTo(0, 750);
-      } else if (fileName == "graphic.html") {
+      } 
+       if (fileName == "graphic.html") {
         scrollTo(0, 750);
       }
     });
@@ -839,18 +841,22 @@ if (
 }
 
 
-// pop up form
-const popupformbutton = document.querySelector('.calltoaction button');
-const popupform = document.querySelector('.popup__form');
-const closeform = document.querySelector('.close_form');
+if(fileName == 'services.html' || fileName == "video.html" || fileName == "development" || fileName == "graphic.html" || fileName == "portfolio.html"){
 
-popupformbutton.addEventListener('click', () => {
-  popupform.classList.add('showPopUpForm');
-})
+  // pop up form
+  const popupformbutton = document.querySelector('.calltoaction button');
+  const popupform = document.querySelector('.popup__form');
+  const closeform = document.querySelector('.close_form');
+  
+  popupformbutton.addEventListener('click', () => {
+    popupform.classList.add('showPopUpForm');
+  })
+  
+  closeform.addEventListener('click', () => {
+    popupform.classList.remove('showPopUpForm');
+  })
+}
 
-closeform.addEventListener('click', () => {
-  popupform.classList.remove('showPopUpForm');
-})
 
 
 // package select

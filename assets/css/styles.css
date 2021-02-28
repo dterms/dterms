@@ -264,27 +264,27 @@ header {
 /* mobile menu style starts here */
 
 .mobilemenu {
-  height: 7vh;
-  overflow: hidden;
-  /* margin-bottom: 2.5rem; */
-  box-shadow: 0 0 10px 0 #0000000f;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  display: none;
-  background: white;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  transition: all 0.5s;
+	height: 65px;
+	overflow: hidden;
+	/* margin-bottom: 2.5rem; */
+	box-shadow: 0 0 10px 0 #0000000f;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	display: none;
+	background: white;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	transition: all 0.5s;
 }
 
 .showmobilemenu {
-  height: 40vh !important;
+  height: 400px !important;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -1570,18 +1570,18 @@ footer {
   position: relative;
 }
 .graphic__bodyServiceProcessItem span {
-	position: absolute;
-	top: -5%;
-	left: -5%;
-	background: dodgerblue;
-	font-size: 2rem;
-	color: white;
-	border-radius: 50%;
-	height: 85px;
-	width: 85px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  background: dodgerblue;
+  font-size: 2rem;
+  color: white;
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .graphic__bodyServiceProcessItem:nth-child(2),
@@ -2421,9 +2421,21 @@ input[type="number"]::-webkit-outer-spin-button {
   display: none;
 }
 
-.stickFilterToLeft .serviceHeaderSpaceOnScroll,
-.stickFilterToLeft .videoHeaderSpaceOnScroll {
+.servicesPage .serviceHeaderSpaceOnScroll {
+  margin-top: 10rem;
+}
+
+.videoPage .videoHeaderSpaceOnScroll {
   margin-top: 5rem;
+}
+
+.developmentpage .developmentSpaceOnScroll {
+  margin-top: 5rem;
+}
+
+
+.graphicpage .graphicSpaceOnScroll {
+  margin-top: 0rem;
 }
 
 /* ------------------------------------------------- */
@@ -2437,6 +2449,13 @@ input[type="number"]::-webkit-outer-spin-button {
   .controls button {
     margin: 0 0.5rem;
   }
+  .servicesPage .serviceHeaderSpaceOnScroll {
+    margin-top: 15rem;
+  }
+  
+.videoPage .videoHeaderSpaceOnScroll {
+  margin-top: 10rem;
+}
 }
 
 /* for screen size 1683px */
@@ -2474,13 +2493,14 @@ input[type="number"]::-webkit-outer-spin-button {
   .nav_item {
     margin: 0px 0.4rem;
   }
-
-  .serviceHeaderSpaceOnScroll,
-  .videoHeaderSpaceOnScroll {
-    margin-top: 10rem;
-  }
   .popup__form form {
     width: 35%;
+  }
+  .servicesPage .serviceHeaderSpaceOnScroll {
+    margin-top: 17rem;
+  }
+  .graphicpage .graphicSpaceOnScroll {
+    margin-top: 5rem;
   }
 }
 
@@ -2596,18 +2616,18 @@ input[type="number"]::-webkit-outer-spin-button {
   .graphic__bodyServiceProcessItem img {
     height: 150px;
   }
-
-  .serviceHeaderSpaceOnScroll,
-  .videoHeaderSpaceOnScroll {
-    margin-top: 12rem;
-  }
   .breadcums__header a {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .breadcums__body div h1 {
     font-size: 2rem;
   }
-
+  .developmentpage .developmentSpaceOnScroll {
+    margin-top: 10rem;
+  }
+  .graphicpage .graphicSpaceOnScroll {
+    margin-top: 7.5rem;
+  }
 }
 
 /* for screen size 1300px */
@@ -2661,6 +2681,12 @@ input[type="number"]::-webkit-outer-spin-button {
   .container {
     width: 75%;
   }
+  .servicesPage .serviceHeaderSpaceOnScroll {
+    margin-top: 20rem;
+  }
+  .graphicpage .graphicSpaceOnScroll {
+    margin-top: 10rem;
+  }
 }
 
 /* for screen size 1200px */
@@ -2700,6 +2726,14 @@ input[type="number"]::-webkit-outer-spin-button {
   .header__left img {
     width: 70%;
   }
+
+  
+.videoPage .videoHeaderSpaceOnScroll {
+  margin-top: 20rem;
+}
+.graphicpage .graphicSpaceOnScroll {
+	margin-top: 13rem;
+}
 }
 
 /* for screen size 1100px */
@@ -2738,6 +2772,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* for screen size 1140px */
 @media screen and (max-width: 1140px) {
+  
   header {
     display: none;
   }
@@ -2745,40 +2780,17 @@ input[type="number"]::-webkit-outer-spin-button {
   .mobilemenu {
     display: block;
   }
+  .developmentpage .developmentSpaceOnScroll {
+    margin-top: 15rem;
+  }
 }
-
-/* for screen size 1090px */
+  /* for screen size 1090px */
 @media screen and (max-width: 1090px) {
-  .nav_item {
-    margin: 0 0.5rem;
+  .nav_item{
+    margin: 0 0.5rem; 
   }
-}
-
-/* for screen size 1024px */
-@media screen and (max-width: 1024px) {
-  .videoPage__bodyVideoBody {
-    grid-template-columns: 1fr;
-  }
-  .videoPage__bodyAnimationBodyCenter {
-    height: 400px;
-  }
-
-  .whyus__left ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-
-  .whyus .container {
-    grid-template-columns: 1fr;
-  }
-
-  .whyus__left ul li {
-    margin: 0rem 0;
-  }
-
-  .popup__form form {
-    width: 55%;
+  .graphicpage .graphicSpaceOnScroll {
+    margin-top: 17rem;
   }
 }
 
@@ -2910,12 +2922,40 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 0.85rem;
     width: 100%;
   }
+}
 
-  .serviceHeaderSpaceOnScroll,
-  .videoHeaderSpaceOnScroll {
-    margin-top: 15rem;
+/* for screen size 1024px */
+@media screen and (max-width: 1024px) {
+  .videoPage__bodyVideoBody {
+    grid-template-columns: 1fr;
+  }
+  .videoPage__bodyAnimationBodyCenter {
+    height: 400px;
+  }
+
+  .whyus__left ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .whyus .container {
+    grid-template-columns: 1fr;
+  }
+
+  .whyus__left ul li {
+    margin: 0rem 0;
+  }
+
+  .popup__form form {
+    width: 55%;
+  }
+  .services__bodyServiceBodyTopHeading,
+  .services__bodyServiceBodyBottomHeading {
+    grid-template-columns: 10% 90%;
   }
 }
+
 /* for screen size 900px */
 @media screen and (max-width: 900px) {
   .featured__body {
@@ -3060,13 +3100,13 @@ input[type="number"]::-webkit-outer-spin-button {
     grid-template-columns: repeat(2, 1fr);
   }
   .breadcums__header a {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   .breadcums__body div p {
     font-size: 0.8rem;
   }
   .graphicpage .graphic__header div p {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   .graphic__bodyService {
     padding: 2rem 0;
@@ -3081,7 +3121,20 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 3rem 0;
   }
   .controls button {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+
+  .services__bodyServiceHeader h1 {
+    font-size: 1.5rem;
+  }
+  .services__bodyServiceHeader p {
+    font-size: 0.9rem;
+  }
+  .services__bodyServiceBodyTop ul {
+    width: 100%;
+  }
+  .videoPage__bodyAnimationBodyCenter {
+    height: 270px;
   }
 }
 
@@ -3231,6 +3284,12 @@ input[type="number"]::-webkit-outer-spin-button {
   .graphic__bodyServiceProcessItem:nth-child(4) {
     position: relative;
     top: 0%;
+  }
+  .developmentpage .developmentSpaceOnScroll {
+    margin-top: 17rem;
+  }
+  .graphicpage .graphicSpaceOnScroll {
+    margin-top: 25rem;
   }
 }
 
@@ -3457,7 +3516,7 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 1rem 0;
   }
   .developmentpage .development__header div p {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   .development__bodyServiceIntro div ul li {
     margin: 1rem 0;
@@ -3470,13 +3529,15 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 1.5rem;
   }
   .development__bodyServiceProcessHeader p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .featured .container > h1 {
     font-size: 1.4rem;
   }
+  .servicesPage .serviceHeaderSpaceOnScroll {
+    margin-top: 30rem;
+  }
 }
-
 
 /* for screen size in 550 in width */
 @media screen and (max-width: 550px) {
@@ -3523,7 +3584,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .controls button {
-    margin: 0 .2rem;
+    margin: 0 0.2rem;
   }
 
   .controls button {
@@ -3738,6 +3799,44 @@ input[type="number"]::-webkit-outer-spin-button {
     color: gray;
     font-size: 0.85rem;
   }
+  .services__bodyServiceHeader h1 {
+    font-size: 1rem;
+  }
+  .linkedinMarketing .services__bodyServiceBodyTopHeading h3,
+  .linkedinMarketing .services__bodyServiceBodyBottomHeading h3 {
+    font-size: 0.9rem !important;
+  }
+  .mobilemenu__header > img {
+    width: 100px;
+  }
+  .mobilemenu__header div img {
+    width: 18px;
+  }
+  .mobilemenu__body ul li a {
+    font-size: 0.85rem;
+  }
+  .mobilemenu__bodyQuote {
+    padding: 0.3rem 0.8rem;
+  }
+  .mobilemenu__bodyQuote img {
+    width: 25px;
+  }
+  .services__bodyServiceBodyTopHeading h3, .services__bodyServiceBodyBottomHeading h3 {
+    font-size: .85rem !important;
+  }
+  .videoPage .Videos__header div p {
+    font-size: .8rem;
+  }
+  .videoPage__bodyAnimationBodyCenter {
+    height: 170px;
+  }
+  .videoPage__body {
+    width: 90%;
+    margin: auto;
+  }
+  .graphicpage .graphicSpaceOnScroll {
+    margin-top: 20rem;
+  }
 }
 
 /* for screen size in 360px in height */
@@ -3762,19 +3861,19 @@ input[type="number"]::-webkit-outer-spin-button {
   .services__bodyServiceBodyBottom ul li {
     font-size: 0.75rem;
   }
+  .mobilemenu__header div img {
+    width: 18px;
+  }
+  .services__bodyServiceBodyTop + p {
+    font-size: 0.85rem;
+  }
 }
 
 /* ------------------------------------------------------------ */
 
 /* for screen size in 760px in height */
 @media screen and (max-height: 760px) {
-  .mobilemenu {
-    height: 9vh;
-  }
-
-  .showmobilemenu {
-    height: 60vh !important;
-  }
+  
   .servicesPage .stickFilterToLeft {
     top: 20%;
   }
@@ -3793,13 +3892,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* for screen size in 670px in height */
 @media screen and (max-height: 670px) {
-  .mobilemenu {
-    height: 10vh;
-  }
-
-  .showmobilemenu {
-    height: 70vh !important;
-  }
+  
 
   .buyservice__footer form label {
     font-size: 0.8rem;
@@ -3808,13 +3901,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* for screen size in 610px in height */
 @media screen and (max-height: 610px) {
-  .mobilemenu {
-    height: 12vh;
-  }
-
-  .showmobilemenu {
-    height: 75vh !important;
-  }
+  
 
   .buyservice__footer form label {
     font-size: 0.8rem;
@@ -3823,12 +3910,14 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* for screen size in 560px in height */
 @media screen and (max-height: 560px) {
-  .mobilemenu {
-    height: 12vh;
+  .mobilemenu__body ul li {
+    margin: 0.5rem 0;
   }
-
+  ul li a {
+    font-size: .9rem;
+  }
   .showmobilemenu {
-    height: 80vh !important;
+    height: 300px !important;
   }
 }
 
@@ -3848,31 +3937,15 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* for screen size in 530px in height */
 @media screen and (max-height: 530px) {
-  .mobilemenu {
-    height: 12vh;
-  }
-
-  .showmobilemenu {
-    height: 85vh !important;
-  }
+  
   .cart__bodyLeftBodyService .service__image {
     width: 40px;
     height: 40px;
   }
-  .mobilemenu {
-    position: unset;
-  }
 }
-
-/* for screen size in 480px in height */
+  /* for screen size in 480px in height */
 @media screen and (max-height: 480px) {
-  .mobilemenu {
-    height: 15vh;
-  }
-
-  .showmobilemenu {
-    height: 90vh !important;
-  }
+  
   .servicesPage .services__header {
     grid-gap: 0.5rem;
   }
@@ -3886,37 +3959,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-/* for screen size in 440px in height */
-@media screen and (max-height: 440px) {
-  .mobilemenu {
-    height: 15vh;
-  }
-
-  .showmobilemenu {
-    height: 95vh !important;
-  }
-}
-
-/* for screen size in 410px in height */
-@media screen and (max-height: 410px) {
-  .mobilemenu {
-    height: 15vh;
-  }
-
-  .showmobilemenu {
-    height: 100vh !important;
-  }
-}
-
 /* for screen size in 375px in height */
 @media screen and (max-height: 375px) {
-  .mobilemenu {
-    height: 20vh;
-  }
-
-  .showmobilemenu {
-    height: 120vh !important;
-  }
+  
   .servicesPage .services__header {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -3928,17 +3973,6 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .services__bodyServiceBodyTop div {
     font-size: 0.8rem;
-  }
-}
-
-/* for screen size in 330px in height */
-@media screen and (max-height: 330px) {
-  .mobilemenu {
-    height: 20vh;
-  }
-
-  .showmobilemenu {
-    height: 130vh !important;
   }
 }
 

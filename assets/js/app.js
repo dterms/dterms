@@ -658,11 +658,11 @@ if (fileName == "development.html") {
     if (scrolled > 700) {
       // console.log('hey')
       developmentHeader.classList.add("stickFilterToLeft");
-      developmentBody.classList.add("videoHeaderSpaceOnScroll");
+      developmentBody.classList.add("developmentSpaceOnScroll");
     } else {
       // console.log('kaj korchena')
       developmentHeader.classList.remove("stickFilterToLeft");
-      developmentBody.classList.remove("videoHeaderSpaceOnScroll");
+      developmentBody.classList.remove("developmentSpaceOnScroll");
     }
   });
 }
@@ -782,26 +782,21 @@ if (fileName == "graphic.html") {
     websitegraphicSection.classList.add("developmentShow");
   });
 
-  // filter onscroll
 
+  // filter onscroll
   const graphicHeader = document.querySelector(".graphic__header");
   const graphicBody = document.querySelector(".graphic__body");
 
   window.addEventListener("scroll", () => {
-    // console.clear();
 
     const scrolled = window.scrollY;
 
-    // console.log(scrolled)
-
     if (scrolled > 700) {
-      // console.log('hey')
       graphicHeader.classList.add("stickFilterToLeft");
-      graphicBody.classList.add("videoHeaderSpaceOnScroll");
+      graphicBody.classList.add("graphicSpaceOnScroll");
     } else {
-      // console.log('kaj korchena')
       graphicHeader.classList.remove("stickFilterToLeft");
-      graphicBody.classList.remove("videoHeaderSpaceOnScroll");
+      graphicBody.classList.remove("graphicSpaceOnScroll");
     }
   });
 }
@@ -810,6 +805,7 @@ if (fileName == "graphic.html") {
 if (
   fileName == "" ||
   fileName == "index.html" ||
+  fileName == "services.html" ||
   fileName == "video.html" ||
   fileName == "development.html" ||
   fileName == "graphic.html"
@@ -824,8 +820,7 @@ if (
   for (item of filtermenuitem) {
     item.addEventListener("click", () => {
       if (fileName == "services.html") {
-        scrollTo(0, 2010);
-        alert('something')
+        scrollTo(0, 800);
       }
        if (fileName == "video.html") {
         scrollTo(0, 600);

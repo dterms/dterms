@@ -53,6 +53,24 @@ button {
 
 /* header style stars from here */
 
+.topbar {
+  background: #04bef7;
+}
+
+.topbar .container {
+  padding: .6rem 0;
+}
+.topbar .container p {
+  font-size: .85rem;
+  font-weight: 500;
+  color: white;
+}
+
+.topbar a img {
+	width: 8%;
+	margin-right: 0.5rem;
+}
+
 header {
   background: white;
   box-shadow: 0 0 10px 0px #00000012;
@@ -70,7 +88,9 @@ header {
 }
 
 .header__right ul li .active {
-  color: dodgerblue;
+	color: dodgerblue;
+	border-left: 3px solid dodgerblue;
+	padding-left: 0.5rem;
 }
 
 .header__right ul .corporate {
@@ -2727,7 +2747,9 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 70%;
   }
 
-  
+  .topbar a {
+    margin: 0;
+  }
 .videoPage .videoHeaderSpaceOnScroll {
   margin-top: 20rem;
 }
@@ -2791,6 +2813,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .graphicpage .graphicSpaceOnScroll {
     margin-top: 17rem;
+  }
+  .topbar .container p {
+    font-size: .75rem;
   }
 }
 
@@ -2953,6 +2978,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .services__bodyServiceBodyTopHeading,
   .services__bodyServiceBodyBottomHeading {
     grid-template-columns: 10% 90%;
+  }
+  .topbar .container p {
+    font-size: .7rem;
   }
 }
 
@@ -3135,6 +3163,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .videoPage__bodyAnimationBodyCenter {
     height: 270px;
+  }
+  .topbar {
+    display: none !important;
   }
 }
 
